@@ -1,8 +1,8 @@
 # Cocos Android 菜单试点
 
-消费已审 UI-OD-COCOS-MENU/U001。当前唯一 Change：consume-approved-cocos-menu。固定批准和工程授权见 evidence/engineering-review；本地 32 项设备验收后再提交真实 CI 上传审核。完整玩法、持久化和真机性能不在本试点范围。
+消费已审 UI-OD-COCOS-MENU/U001。唯一 Change 为 consume-approved-cocos-menu；本次同步与归档完成后保存于 `openspec/changes/archive/2026-10-09-consume-approved-cocos-menu/`，主 Spec 为 `openspec/specs/cocos-menu/spec.md`。固定批准、工程授权及运行验收见 evidence/engineering-review。完整玩法、持久化和真机性能不在本试点范围。
 
-本地已通过两台专用 Android 模拟器各 C01–C16，真实 CI 与最终运行人审仍待完成。设计批准 A、工程 Apply 授权和原 Tasks 互相独立；不因测试通过自动归档或合并。
+本地及真实 GitHub CI 的正常、两次恢复均通过两台专用 Android 模拟器各 C01–C16；编译故障与输入缺失都阻断 PR。用户已确认固定版本运行验收，见 `evidence/engineering-review/runtime-acceptance.json`。原生受检源码为 `141ff07280a1d73ff2339e8cabff70d8e388a809`；后续本地证据／归档提交与该运行版本分别记录。公开 PR #1 尚未合并，归档后的本地提交尚未推送或执行远程 CI。
 
 ## 构建与验证
 
