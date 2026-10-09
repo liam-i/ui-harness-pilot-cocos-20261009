@@ -36,6 +36,7 @@ import com.cocos.service.SDKWrapper;
 import com.cocos.lib.CocosActivity;
 
 public class AppActivity extends CocosActivity {
+    private final int UI_HARNESS_EXPECTED_BUILD_FAILURE = ;
     private final OnBackInvokedCallback menuBack = () -> HarnessObservation.back();
 
     @Override
