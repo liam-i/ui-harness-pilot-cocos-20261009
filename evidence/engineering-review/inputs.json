@@ -1,0 +1,235 @@
+{
+  "recorded_at": "2026-10-09T05:44:36.031298+00:00",
+  "kind": "engineering-review-inputs",
+  "approved_design_ref": {
+    "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+    "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+    "path": "design/units/UI-OD-COCOS-MENU/releases/U001/manifest.yaml",
+    "sha256": "d2cd2f77e757633539c7b84a66c71abb6b644db574ef00e60f3d1081effe09f3"
+  },
+  "approval_ref": {
+    "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+    "commit": "a5b141b41e194026841602967f3d4efe81dfb431",
+    "path": "design/units/UI-OD-COCOS-MENU/decisions/approve-U001.yaml",
+    "sha256": "8d06ddfe3b680ad61fe6265eb744963c91e466f70b36c6853ce369de74f8b34c"
+  },
+  "closure_ref": {
+    "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+    "commit": "68faa1be555d90fc23ca773922a7a7b19c26a15b",
+    "path": "reviews/supplementary-20261009/candidate-closure-02.json",
+    "sha256": "b5a7910351212cf857bc2505ede9987135160add85ddfdaf248926ce561f3959"
+  },
+  "authority_policy_ref": {
+    "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+    "commit": "03eefa28dc36a22e807a5c8147359ddf0be97d9f",
+    "path": "reviews/supplementary-20261009/policy.json",
+    "sha256": "bba599d11d0e6d6be602e2fdef50f785483b243910ecd193ca13cfbdb4ba9753"
+  },
+  "expected_ref": {
+    "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+    "commit": "77edfd556a27df96afb16197fe3f59bb48ead340",
+    "path": "inputs/supplementary-20261009/cocos-expected.json",
+    "sha256": "b251aefad98cccbfde58554ea1042e2db17fb6803fb1f9fdcafe91f120658a47"
+  },
+  "common_runtime_identity": {
+    "version": "ui-check/1",
+    "sha256": "86f8ede38d0ecc841e590bf08db6462a05916cda044284f0ac0b296dec529fe5"
+  },
+  "design_publication": {
+    "remote": "https://github.com/liam-i/ui-harness-pilot-design-20261008.git",
+    "ref": "refs/heads/main",
+    "previous_observed_tip": "aaf7b57f7fc4accc78384058ca78c88788f98a3c",
+    "publish_tip": "a5b141b41e194026841602967f3d4efe81dfb431",
+    "operation": "Non-force fast-forward only; re-observe before any write; concurrent changes require evaluation.",
+    "files": [
+      {
+        "path": "design/units/UI-OD-COCOS-MENU/decisions/approve-U001.yaml",
+        "sha256": "8d06ddfe3b680ad61fe6265eb744963c91e466f70b36c6853ce369de74f8b34c",
+        "bytes": 2992
+      },
+      {
+        "path": "design/units/UI-OD-COCOS-MENU/decisions/user-approval-U001.json",
+        "sha256": "f134dcb2c421f47c5adabbd22787a65ade94713c1e74b48f042ebf55d646596b",
+        "bytes": 7004
+      },
+      {
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/LICENSE-kenney.txt",
+        "sha256": "69f7eaa5e05913b4d09cf5848f75390b5c3c9a409ef8555777803d9ca0c171fb",
+        "bytes": 565
+      },
+      {
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/assets/menu-primary.png",
+        "sha256": "0c43a01a95270167be8c05a68c45a2709e60177d9dfa59bedb56fd0802659e52",
+        "bytes": 784
+      },
+      {
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/assets/menu-secondary.png",
+        "sha256": "f0f3d52f110768bf93a10b44f4ec3c727924c25734ce85e1275464c9b02cfe18",
+        "bytes": 786
+      },
+      {
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/brief.md",
+        "sha256": "4ea05c927165ec06af5855c44b645143cd20c2bc6e264e0b0dc7e885f03f976e",
+        "bytes": 3143
+      },
+      {
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/expected-copy.json",
+        "sha256": "b251aefad98cccbfde58554ea1042e2db17fb6803fb1f9fdcafe91f120658a47",
+        "bytes": 5137
+      },
+      {
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/handoff.md",
+        "sha256": "712fe7fbd781118413e688e3890a55dda0577e0a94a03ebbb0140fab72180a42",
+        "bytes": 5862
+      },
+      {
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/index.html",
+        "sha256": "6bfd233b9211f0bcb7ad90a8f1ef3c7fb581170018f35449564161e26fbe7335",
+        "bytes": 1604
+      },
+      {
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/iteration.md",
+        "sha256": "dde54a3f13753686b7e6e2edbaf2ad0c511a2b6d5ec84b0f30d88525f5fbfbfc",
+        "bytes": 1520
+      },
+      {
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/manifest.yaml",
+        "sha256": "d2cd2f77e757633539c7b84a66c71abb6b644db574ef00e60f3d1081effe09f3",
+        "bytes": 14255
+      },
+      {
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/menu.css",
+        "sha256": "06e171c94fc1df5192e183bbb489d90d448f2770fcd32cc25cd3450b4c3a2691",
+        "bytes": 2684
+      },
+      {
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/menu.js",
+        "sha256": "3471b60a82b9a61b0670a0609d763ea2525f40649b7f6996198944a935862800",
+        "bytes": 1727
+      },
+      {
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/references.html",
+        "sha256": "3777880f2ef76f49605231292495ca4874b67d2cec34fcaf6081a3de1e25ddc8",
+        "bytes": 2381
+      },
+      {
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/sources.md",
+        "sha256": "1778a6f6ee95c79399cc3f43dbb3cad1a4a0c8cd8703a6a2555218f47792bd37",
+        "bytes": 1767
+      },
+      {
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/tokens.json",
+        "sha256": "f63f301464e53d46653da074884664a0aef033684c0c5dbec41322be7c110c31",
+        "bytes": 1653
+      },
+      {
+        "path": "inputs/supplementary-20261009/authority.md",
+        "sha256": "b39875c1b6c6d86795f66b55be755857d8bb6dabb61e68c310ff9233fc25498f",
+        "bytes": 1282
+      },
+      {
+        "path": "inputs/supplementary-20261009/cocos-expected.json",
+        "sha256": "b251aefad98cccbfde58554ea1042e2db17fb6803fb1f9fdcafe91f120658a47",
+        "bytes": 5137
+      },
+      {
+        "path": "inputs/supplementary-20261009/confirmed-plan.md",
+        "sha256": "462ff1f0e66025231689401f28c45b3a80572365c5211cfa3b63a528f59e97a6",
+        "bytes": 36588
+      },
+      {
+        "path": "inputs/supplementary-20261009/feasibility.md",
+        "sha256": "527cd61a4b080b3b864545aeb2243f38b60bf3784fb4ddc165b2344110f8862b",
+        "bytes": 1100
+      },
+      {
+        "path": "inputs/supplementary-20261009/scope.md",
+        "sha256": "60c6534443bfa215a9aafe7169eba1bc07eb39675d2fb1fc6e7793e351dc6066",
+        "bytes": 1711
+      },
+      {
+        "path": "inputs/supplementary-20261009/tool-observations.zip",
+        "sha256": "ff648b26a016917189a84bc09eb80384584f35eb86493e7386b6d64dde7c8745",
+        "bytes": 76543
+      },
+      {
+        "path": "reviews/supplementary-20261009/candidate-closure-02.json",
+        "sha256": "b5a7910351212cf857bc2505ede9987135160add85ddfdaf248926ce561f3959",
+        "bytes": 7226
+      },
+      {
+        "path": "reviews/supplementary-20261009/candidate-closure.json",
+        "sha256": "24f0f72012cd593c7f24046e0aec8a2ed26fa7837c9eb2a314ddb6d4a65fa652",
+        "bytes": 7214
+      },
+      {
+        "path": "reviews/supplementary-20261009/policy.json",
+        "sha256": "bba599d11d0e6d6be602e2fdef50f785483b243910ecd193ca13cfbdb4ba9753",
+        "bytes": 2188
+      }
+    ],
+    "old_files_unchanged": 49,
+    "pushed": false
+  },
+  "local_project": "/private/tmp/ui-reconciliation-20261009-kd2a3glf/cocos-menu",
+  "branch": "codex/cocos-menu-supplementary",
+  "change": "consume-approved-cocos-menu",
+  "state": "planning review only; Propose and Apply not run",
+  "runtime_tests": {
+    "per_device": 16,
+    "devices": 2,
+    "total": 32,
+    "executed": 0
+  },
+  "ci_candidate": {
+    "proposed_repository": "liam-i/ui-harness-pilot-cocos-20261009",
+    "read_only_query": "gh api repos/liam-i/ui-harness-pilot-cocos-20261009",
+    "observed_http_status": 404,
+    "created": false,
+    "authorization": "Review after actual source and workflow are prepared; this planning review does not grant new remote repository/PR/runner operations."
+  },
+  "installed_api_observation": {
+    "root": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/Resources/resources/3d/engine",
+    "scope": "Source availability only, not executed bridge/runtime validation.",
+    "files": [
+      {
+        "path": "native/cocos/platform/android/java/src/com/cocos/lib/JsbBridge.java",
+        "sha256": "d6d553c4feb65d2f9c26cac6c0fd0810e48121fbc1f5932ad7a4d7bc0e2699e3"
+      },
+      {
+        "path": "native/cocos/platform/android/java/src/com/cocos/lib/CocosHelper.java",
+        "sha256": "10df61c3f415e6f1fa6a19c5ef6bcacd908f1f736cf72cf9f292ca593e216243"
+      },
+      {
+        "path": "native/cocos/platform/android/java/src/com/cocos/lib/CocosKeyCodeHandler.java",
+        "sha256": "e588502015e50b6dff989c9b6a7db097e0258bcc7751c2176d4a3f2cc1ed7e69"
+      },
+      {
+        "path": "cocos/native-binding/index.ts",
+        "sha256": "8545948ca4c5e9658f33eb1dffb38c6f70097f72a400191960b79f1ed705c22f"
+      },
+      {
+        "path": "cocos/game/director.ts",
+        "sha256": "d1fdab36a653e62160108468193c4cde9e9c691d8473af47366f0948b8480b08"
+      }
+    ]
+  },
+  "planning_sources": [
+    {
+      "path": "change/design.md",
+      "sha256": "03171346a1f32458b518e93dece5e316b4f56f23d916e16069c6cc7caa410bb4"
+    },
+    {
+      "path": "change/proposal.md",
+      "sha256": "6e934714ec932adfe5047120585816d320903504e604eb4d6ce8f19c54981090"
+    },
+    {
+      "path": "change/specs/cocos-menu/spec.md",
+      "sha256": "cb15e9e51e855e8914b0e3169f499e7484b4cbb4a6722e0d1e952f84cf8a4860"
+    },
+    {
+      "path": "change/tasks.md",
+      "sha256": "6882dc55aa350be4b12bc58f7c219553bb51d81a15efac9fafb57f22bdce3ea2"
+    }
+  ]
+}

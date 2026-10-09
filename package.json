@@ -1,0 +1,15 @@
+{
+  "name": "ui-harness-cocos-menu",
+  "private": true,
+  "uuid": "72e0c54f-e3f1-4b30-bbf2-1359fdecf959",
+  "creator": {
+    "version": "3.8.8"
+  },
+  "scripts": {
+    "spec": "HARNESS_OPENSPEC_SOURCE=local bash scripts/openspec.sh",
+    "test:state": "node --test tests/menu-state.test.ts"
+  },
+  "devDependencies": {
+    "@fission-ai/openspec": "1.12.0"
+  }
+}

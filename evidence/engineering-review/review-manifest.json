@@ -1,0 +1,37 @@
+{
+  "recorded_at": "2026-10-09T05:46:20.836330+00:00",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 7678,
+      "sha256": "3723cfcd97b6b515f75cb3c97e38f21dcc47ef30c5b4c07a92061edfc599dbd2"
+    },
+    {
+      "path": "change/design.md",
+      "bytes": 6513,
+      "sha256": "03171346a1f32458b518e93dece5e316b4f56f23d916e16069c6cc7caa410bb4"
+    },
+    {
+      "path": "change/proposal.md",
+      "bytes": 1433,
+      "sha256": "6e934714ec932adfe5047120585816d320903504e604eb4d6ce8f19c54981090"
+    },
+    {
+      "path": "change/specs/cocos-menu/spec.md",
+      "bytes": 3797,
+      "sha256": "cb15e9e51e855e8914b0e3169f499e7484b4cbb4a6722e0d1e952f84cf8a4860"
+    },
+    {
+      "path": "change/tasks.md",
+      "bytes": 2261,
+      "sha256": "6882dc55aa350be4b12bc58f7c219553bb51d81a15efac9fafb57f22bdce3ea2"
+    },
+    {
+      "path": "inputs.json",
+      "bytes": 9679,
+      "sha256": "0f644add5d8012680a1efbf44deb5c7ab2498681767e070a1b450cdc091bc055"
+    }
+  ],
+  "scope": "Engineering planning and exact approved design publication only. Actual public consumer source/CI operations require the later concrete upload review.",
+  "approved": false
+}

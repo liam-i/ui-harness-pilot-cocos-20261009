@@ -1,0 +1,50 @@
+{
+  "answer": "确认",
+  "recorded_at": "2026-10-09T13:52:00.517048+08:00",
+  "time_basis": "Local capture after actual user reply; platform did not expose exact send time",
+  "actor": "current user in thread 01a0f10c-f08d-7020-bf06-8fabf6ed4b46",
+  "source": "Direct human reply to the pending concrete engineering review; not an automatic Goal continuation",
+  "question": "请审核工程规划：是否允许将已批准设计发布到现有设计权威库，并开始 Cocos Android 本地 Apply？验收范围为两台专用模拟器、共 32 项；新工程公开上传与 CI Runner 在实际代码准备好后另审。",
+  "review_manifest_sha256": "55d631e524b78f95334a9e73b57ecbe5b74084a96ba23c17b8af1898456b64f1",
+  "reviewed_files": [
+    {
+      "path": "README.md",
+      "bytes": 7678,
+      "sha256": "3723cfcd97b6b515f75cb3c97e38f21dcc47ef30c5b4c07a92061edfc599dbd2"
+    },
+    {
+      "path": "change/design.md",
+      "bytes": 6513,
+      "sha256": "03171346a1f32458b518e93dece5e316b4f56f23d916e16069c6cc7caa410bb4"
+    },
+    {
+      "path": "change/proposal.md",
+      "bytes": 1433,
+      "sha256": "6e934714ec932adfe5047120585816d320903504e604eb4d6ce8f19c54981090"
+    },
+    {
+      "path": "change/specs/cocos-menu/spec.md",
+      "bytes": 3797,
+      "sha256": "cb15e9e51e855e8914b0e3169f499e7484b4cbb4a6722e0d1e952f84cf8a4860"
+    },
+    {
+      "path": "change/tasks.md",
+      "bytes": 2261,
+      "sha256": "6882dc55aa350be4b12bc58f7c219553bb51d81a15efac9fafb57f22bdce3ea2"
+    },
+    {
+      "path": "inputs.json",
+      "bytes": 9679,
+      "sha256": "0f644add5d8012680a1efbf44deb5c7ab2498681767e070a1b450cdc091bc055"
+    }
+  ],
+  "scope": [
+    "Publish exact approved design history ending at a5b141b41e194026841602967f3d4efe81dfb431 to existing design authority main by non-force fast-forward",
+    "Start the reviewed isolated Cocos Android Standard workflow and local Apply, including necessary local commits and two-device 32-case verification"
+  ],
+  "excluded": [
+    "New consumer remote repository, source upload, PR or CI runner registration before later concrete review",
+    "Product release or main tutorial repository commit",
+    "Final runtime human acceptance"
+  ]
+}
