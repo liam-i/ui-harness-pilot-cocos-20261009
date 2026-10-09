@@ -29,6 +29,16 @@ record={'started_at':time.time(),'build':str(args.build),'apk':build['apk'],
 processes=[];settings=[];server_started=False
 
 def save(): (out/'result.json').write_text(json.dumps(record,indent=2)+'\n')
+
+def interrupted(number, frame):
+    signal.signal(signal.SIGTERM,signal.SIG_IGN)
+    signal.signal(signal.SIGINT,signal.SIG_IGN)
+    record['interrupted']=True
+    raise InterruptedError('Runtime interrupted by signal '+str(number))
+
+signal.signal(signal.SIGTERM,interrupted)
+signal.signal(signal.SIGINT,interrupted)
+
 def run(command,limit=15):
     r=subprocess.run(command,env=env,capture_output=True,text=True,timeout=limit)
     if r.returncode:raise RuntimeError(str(command)+': '+r.stderr)

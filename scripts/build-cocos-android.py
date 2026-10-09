@@ -11,10 +11,20 @@ P = Path(__file__).resolve().parents[1]
 c = json.loads(args.config.read_text())
 out = args.output.resolve()
 out.mkdir(parents=True, exist_ok=False)
-record = {'started_at': time.time(), 'project': str(P), 'config': c, 'steps': [], 'passed': False}
+record = {'started_at': time.time(), 'project': str(P),
+          'host_config_sha256': hashlib.sha256(args.config.read_bytes()).hexdigest(), 'steps': [], 'passed': False}
 
 def save():
     (out / 'result.json').write_text(json.dumps(record, indent=2) + '\n')
+
+def interrupted(number, frame):
+    signal.signal(signal.SIGTERM, signal.SIG_IGN)
+    signal.signal(signal.SIGINT, signal.SIG_IGN)
+    record['interrupted'] = True
+    raise InterruptedError('Build interrupted by signal ' + str(number))
+
+signal.signal(signal.SIGTERM, interrupted)
+signal.signal(signal.SIGINT, interrupted)
 
 env = dict(os.environ)
 env.pop('ELECTRON_RUN_AS_NODE', None)
@@ -33,13 +43,16 @@ def run(name, command, cwd, limit, expected):
         step['pid'] = process.pid; save()
         try:
             step['exit'] = process.wait(timeout=limit)
-        except subprocess.TimeoutExpired:
-            step['timed_out'] = True
+        except BaseException as error:
+            step['timed_out'] = isinstance(error, subprocess.TimeoutExpired)
+            step['interrupted'] = True
             os.killpg(process.pid, signal.SIGTERM)
             try: process.wait(timeout=10)
             except subprocess.TimeoutExpired:
                 os.killpg(process.pid, signal.SIGKILL); process.wait()
             step['exit'] = process.returncode
+            step['finished_at'] = time.time(); save()
+            raise
     step['finished_at'] = time.time(); save()
     if step['exit'] != expected or step.get('timed_out'):
         raise RuntimeError(name + ' failed; original logs retained')

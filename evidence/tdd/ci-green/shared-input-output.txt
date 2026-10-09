@@ -1,0 +1,10 @@
+test_actual_head_fixed_inputs_and_live_authority_pass (test_ui_ci.UIPlatformTests.test_actual_head_fixed_inputs_and_live_authority_pass) ... ok
+test_historical_mode_cannot_satisfy_current_ci (test_ui_ci.UIPlatformTests.test_historical_mode_cannot_satisfy_current_ci) ... ok
+test_host_sha_mismatch_rejects_before_check (test_ui_ci.UIPlatformTests.test_host_sha_mismatch_rejects_before_check) ... ok
+test_native_zero_or_skipped_tests_do_not_pass (test_ui_ci.UIPlatformTests.test_native_zero_or_skipped_tests_do_not_pass) ... ok
+test_new_authority_commit_cannot_use_old_green (test_ui_ci.UIPlatformTests.test_new_authority_commit_cannot_use_old_green) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 7.164s
+
+OK
