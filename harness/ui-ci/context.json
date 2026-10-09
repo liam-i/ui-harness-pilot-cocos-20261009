@@ -1,0 +1,49 @@
+{
+  "business_repository": "ui-harness-cocos-menu-20261009",
+  "ui_repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+  "policy_path": "harness/ui-design/config/project.json",
+  "bindings_path": "openspec/changes/consume-approved-cocos-menu/ui-bindings.json",
+  "snapshot": {
+    "schema_version": "ui-snapshot/1",
+    "mode": "current",
+    "action": "pre-merge",
+    "rules": {
+      "version": "ui-check/1",
+      "sha256": "86f8ede38d0ecc841e590bf08db6462a05916cda044284f0ac0b296dec529fe5"
+    },
+    "authorities": [
+      {
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "ref": "refs/heads/main",
+        "history_root": "a6bc9fb40ff11bdfe7190273b97ebb6901f9ad52",
+        "commit": "a5b141b41e194026841602967f3d4efe81dfb431"
+      }
+    ],
+    "subject": {
+      "kind": "change",
+      "id": "consume-approved-cocos-menu"
+    },
+    "selections": [
+      {
+        "consumer": {
+          "kind": "change",
+          "subject": "consume-approved-cocos-menu",
+          "record_ref": {
+            "repository": "ui-harness-cocos-menu-20261009",
+            "commit": "92fe9aaa3319e2cb156353f1764d22d425c64880",
+            "path": "openspec/changes/consume-approved-cocos-menu/proposal.md",
+            "sha256": "6e934714ec932adfe5047120585816d320903504e604eb4d6ce8f19c54981090"
+          }
+        },
+        "behaviors": [
+          "Menu and session transitions preserve approved behavior",
+          "Android lifecycle and configuration match the approved scope",
+          "Native presentation consumes the exact approved resources",
+          "Verification rejects missing or unsuccessful obligations"
+        ],
+        "consumption": "new"
+      }
+    ],
+    "external_files": []
+  }
+}
