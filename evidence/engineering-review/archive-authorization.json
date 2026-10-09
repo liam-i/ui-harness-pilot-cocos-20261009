@@ -1,0 +1,32 @@
+{
+  "kind": "actual-human-local-archive-authorization",
+  "captured_at": "2026-10-09T09:10:52.387265+00:00",
+  "timestamp_note": "Capture time after actual reply, not an inferred exact user send time",
+  "source": "Current direct human reply in thread 01a0f10c-f08d-7020-bf06-8fabf6ed4b46 to the pending concrete local closeout review",
+  "human_reply": "授权",
+  "review_page": "cocos-archive-review/README.md",
+  "review_manifest_sha256": "8ef04f2033e4d566c353f71379dceebbc3726e633409a2a7ff49b652663c9560",
+  "source_head": "141ff07280a1d73ff2339e8cabff70d8e388a809",
+  "allowed": [
+    "Synchronize the reviewed cocos-menu main Spec",
+    "Archive the original consume-approved-cocos-menu Change including its two remaining closeout tasks",
+    "Update only the reviewed current bindings_path and project status wording",
+    "Save three local evidence, archive, and closeout commits",
+    "Run applicable current input and specification checks; save independently recoverable bundles and actual evidence",
+    "Update current supplementary validation and support descriptions"
+  ],
+  "excluded": [
+    "Remote push",
+    "PR merge",
+    "Product release",
+    "New runtime or CI run",
+    "Other selected branch acceptance",
+    "Main tutorial repository commit"
+  ],
+  "verification": {
+    "review_files_match": 20,
+    "consumer_files_match": 206,
+    "no_archive_target_collision": true
+  },
+  "reference_paths_relative_to": "engineering-harness/tests/ui-design/evidence/supplementary-20261009 in the tutorial repository"
+}

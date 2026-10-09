@@ -1,0 +1,62 @@
+{
+  "kind": "actual-human-runtime-acceptance",
+  "captured_at": "2026-10-09T08:41:29.565553+00:00",
+  "timestamp_note": "Captured when saving the human reply; not an inferred exact message timestamp.",
+  "source": "Current human message in this task replying to the pending fixed Cocos runtime review",
+  "thread_id": "01a0f10c-f08d-7020-bf06-8fabf6ed4b46",
+  "human_reply": "确认",
+  "decision": "approved",
+  "scope": "Human runtime acceptance for the fixed open-design to Cocos Android menu trial only. No Archive, Merge, product release or other branch acceptance.",
+  "review_page": "cocos-runtime-review/README.md",
+  "review_manifest": "cocos-runtime-review/review-manifest.json",
+  "review_manifest_sha256": "7cd02b4a4ec16914332ef7de6936e6968c12126a2390fa9d9c39493d32cdfec3",
+  "review_request": "cocos-runtime-review-request.json",
+  "review_request_sha256": "5e04ea580244d5c1053d5e07f7e45c56d067d21cac83f3b266fec272c56d2a83",
+  "design_commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+  "design_approval_commit": "a5b141b41e194026841602967f3d4efe81dfb431",
+  "source_head": "141ff07280a1d73ff2339e8cabff70d8e388a809",
+  "source_tree": "3fab58900a246654e15490b736e8994b1a6938c7",
+  "runtime_apk_sha256": "8086472438b280036adb5b87d7bd02281132fe93d5ce7b98a33eaea6aec52f42",
+  "platform": "Cocos Creator 3.8.8 / Android API 37 ARM64 / 16 KB pages",
+  "devices": [
+    {
+      "role": "small",
+      "size": "720x1280",
+      "density": 320
+    },
+    {
+      "role": "regular",
+      "size": "1080x2400",
+      "density": 420
+    }
+  ],
+  "runtime_cases": "Fixed C01-C16 on each of two devices; 32 distinct cases",
+  "ci_runs": [
+    37899960571,
+    37901113682,
+    37901596069,
+    37902629943,
+    37903056121
+  ],
+  "allowed": [
+    "Save the actual human runtime acceptance for this fixed review",
+    "Update local execution records and current verified support scope"
+  ],
+  "excluded": [
+    "Archive",
+    "Merge",
+    "Product release",
+    "Further remote pushes",
+    "Other selected branch acceptance",
+    "Main tutorial repository commit"
+  ],
+  "verification": {
+    "review_files": 246,
+    "review_bytes": 101694645,
+    "all_hashes_match": true,
+    "consumer_head_matches_review": true,
+    "frozen_preapproval_records_unchanged": true
+  },
+  "next_action": "Continue the original Change at Task 4.3 under the corresponding engineering authorization; Archive and local delivery commits have not been performed by this acceptance.",
+  "reference_paths_relative_to": "engineering-harness/tests/ui-design/evidence/supplementary-20261009 in the ai-native-sdlc tutorial repository; copied consumer records retain this reference base."
+}

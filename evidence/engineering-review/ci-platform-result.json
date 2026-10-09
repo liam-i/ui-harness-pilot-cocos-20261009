@@ -1,0 +1,130 @@
+{
+  "head": "141ff07280a1d73ff2339e8cabff70d8e388a809",
+  "source_tree": "3fab58900a246654e15490b736e8994b1a6938c7",
+  "summary_sha256": "0ac909226d15da848155bb82d7fa2588cca15de1c149331acb04cff6c74376e5",
+  "repository": "liam-i/ui-harness-pilot-cocos-20261009",
+  "pr_url": "https://github.com/liam-i/ui-harness-pilot-cocos-20261009/pull/1",
+  "scenarios": [
+    {
+      "verified": true,
+      "attempt": 1,
+      "run_id": 37899960571,
+      "run_url": "https://github.com/liam-i/ui-harness-pilot-cocos-20261009/actions/runs/37899960571",
+      "head": "083447e4b1e6569532f05ee1157061d0099c8490",
+      "expected_and_actual_conclusion": "success",
+      "required_check_id": 113723130488,
+      "required_check_app_id": 15368,
+      "pr_merge_state": "CLEAN",
+      "workflow_sha256": "8d8e0b16fcebb47cfcc1e3e82c76df863d4dc28e83bf173bca517dec64d09a73",
+      "artifact_id": 11602681594,
+      "artifact_sha256": "48c98764bc21f72c089340f7a6ac31f79782eed6ff25ec0f72c22dc1715794a9",
+      "runner_removed": true,
+      "owned_ports_closed": [
+        5038,
+        5580,
+        5582
+      ],
+      "case_count": 32,
+      "devices": 2,
+      "apk_sha256": "5956390e0c7f2c554336c62b6247a0760de1bdf3890a8a93e1320f75c50b1321",
+      "screenshot_count": 46
+    },
+    {
+      "verified": true,
+      "attempt": 2,
+      "run_id": 37901113682,
+      "run_url": "https://github.com/liam-i/ui-harness-pilot-cocos-20261009/actions/runs/37901113682",
+      "head": "459b274e9b639f8e1a6df63bfc71c82b3fd190eb",
+      "expected_and_actual_conclusion": "failure",
+      "required_check_id": 113724196641,
+      "required_check_app_id": 15368,
+      "pr_merge_state": "BLOCKED",
+      "workflow_sha256": "8d8e0b16fcebb47cfcc1e3e82c76df863d4dc28e83bf173bca517dec64d09a73",
+      "artifact_id": 11602517587,
+      "artifact_sha256": "4aec0652783d57e220ebc3b8ba6d4cdcf82c6445a058478530905ccb1fe2b55c",
+      "runner_removed": true,
+      "owned_ports_closed": [
+        5038,
+        5580,
+        5582
+      ],
+      "actual_gradle_exit": 1,
+      "runtime_not_started": true,
+      "expected_compiler_error": true
+    },
+    {
+      "verified": true,
+      "attempt": 3,
+      "run_id": 37901596069,
+      "run_url": "https://github.com/liam-i/ui-harness-pilot-cocos-20261009/actions/runs/37901596069",
+      "head": "8505f52ba06dacbd3f87b4896fef17c717249a1c",
+      "expected_and_actual_conclusion": "success",
+      "required_check_id": 113728047460,
+      "required_check_app_id": 15368,
+      "pr_merge_state": "CLEAN",
+      "workflow_sha256": "8d8e0b16fcebb47cfcc1e3e82c76df863d4dc28e83bf173bca517dec64d09a73",
+      "artifact_id": 11603260407,
+      "artifact_sha256": "5c86c40a310fad3c24eb2b65c157a89ee4c5759bd79a0cdef9e6a883b3c81aab",
+      "runner_removed": true,
+      "owned_ports_closed": [
+        5038,
+        5580,
+        5582
+      ],
+      "case_count": 32,
+      "devices": 2,
+      "apk_sha256": "75d4643d716bd6c8ab96090bf87264362ed58a2ef10a6257a1e0e54cff16fb5f",
+      "screenshot_count": 46
+    },
+    {
+      "verified": true,
+      "attempt": 4,
+      "run_id": 37902629943,
+      "run_url": "https://github.com/liam-i/ui-harness-pilot-cocos-20261009/actions/runs/37902629943",
+      "head": "5444e653c6d78ce8eada5b0e9f62d02e3fcf3cb5",
+      "expected_and_actual_conclusion": "failure",
+      "required_check_id": 113728853341,
+      "required_check_app_id": 15368,
+      "pr_merge_state": "BLOCKED",
+      "workflow_sha256": "8d8e0b16fcebb47cfcc1e3e82c76df863d4dc28e83bf173bca517dec64d09a73",
+      "artifact_id": 11602859368,
+      "artifact_sha256": "a943424d4a9e2a8b8479fa3fc56830018adee892cee602eb9601368832603327",
+      "runner_removed": true,
+      "owned_ports_closed": [
+        5038,
+        5580,
+        5582
+      ],
+      "input_result": "FAIL",
+      "native_not_started": true
+    },
+    {
+      "verified": true,
+      "attempt": 5,
+      "run_id": 37903056121,
+      "run_url": "https://github.com/liam-i/ui-harness-pilot-cocos-20261009/actions/runs/37903056121",
+      "head": "141ff07280a1d73ff2339e8cabff70d8e388a809",
+      "expected_and_actual_conclusion": "success",
+      "required_check_id": 113732808764,
+      "required_check_app_id": 15368,
+      "pr_merge_state": "CLEAN",
+      "workflow_sha256": "8d8e0b16fcebb47cfcc1e3e82c76df863d4dc28e83bf173bca517dec64d09a73",
+      "artifact_id": 11604145019,
+      "artifact_sha256": "2f8f46afaf3b44764e9b0557ca469fcfae3319ab1a86b2af4e0805f66be66d69",
+      "runner_removed": true,
+      "owned_ports_closed": [
+        5038,
+        5580,
+        5582
+      ],
+      "case_count": 32,
+      "devices": 2,
+      "apk_sha256": "8086472438b280036adb5b87d7bd02281132fe93d5ce7b98a33eaea6aec52f42",
+      "screenshot_count": 46
+    }
+  ],
+  "human_runtime_approval": null,
+  "archive_pending": true,
+  "runtime_review_directory": "/Users/liam/Developer/workflow.md/ai-native-sdlc/engineering-harness/tests/ui-design/evidence/supplementary-20261009/cocos-runtime-review",
+  "source_bundle_sha256": "f1e3dd23203c348e60c0de0c0889f6ca196d9931e10031aeecc46719ea15013a"
+}
