@@ -1,0 +1,16 @@
+{
+  "D": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+  "asset_ids": {
+    "MenuScreen": "d18753b0-d11f-485b-8c43-74afdf114489",
+    "MenuState": "ccfa356b-c81c-4092-a028-d5c66625ad09",
+    "RuntimeObservation": "7cbe3e5b-df39-4b31-8247-8905ca46d975",
+    "Menu": "dd4c8005-33c3-4b7a-86ce-4d36bd7cad82"
+  },
+  "inputs": {
+    "assets/resources/ui/menu/menu-secondary.png": "f0f3d52f110768bf93a10b44f4ec3c727924c25734ce85e1275464c9b02cfe18",
+    "assets/resources/ui/menu/menu-primary.png": "0c43a01a95270167be8c05a68c45a2709e60177d9dfa59bedb56fd0802659e52",
+    "assets/resources/ui/menu/LICENSE-kenney.txt": "69f7eaa5e05913b4d09cf5848f75390b5c3c9a409ef8555777803d9ca0c171fb",
+    "assets/resources/ui/menu/tokens.json": "f63f301464e53d46653da074884664a0aef033684c0c5dbec41322be7c110c31"
+  },
+  "scene_class_id_basis": "Creator 3.8.8 app.asar utils/source/uuid.ts compressUUID default reserved5"
+}

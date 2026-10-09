@@ -1,0 +1,1096 @@
+{
+  "action": "start",
+  "authorities": [
+    {
+      "commit": "a5b141b41e194026841602967f3d4efe81dfb431",
+      "commits": [
+        "a6bc9fb40ff11bdfe7190273b97ebb6901f9ad52",
+        "99526d0a38689138bd81fcd8f09e9693502d7d41",
+        "3dd129e52cf4d86d2bd4e6d51c2d8cde75948231",
+        "51ec3351dd1bed964a4dda115e02bae1bfa6335a",
+        "c6f6cda8b823fa5a5fb9c2ec0f89e876c305bd60",
+        "e0541e083c06deb694d091872b08e3499e9d72be",
+        "db1d8d36482883a46f6624c02cde4241547f3d18",
+        "aaf7b57f7fc4accc78384058ca78c88788f98a3c",
+        "77edfd556a27df96afb16197fe3f59bb48ead340",
+        "03eefa28dc36a22e807a5c8147359ddf0be97d9f",
+        "09ebfed2ffb414745206b36af2c80417392b1175",
+        "9f6a404c2c069dae601a8a7ec1e4a875d34665d5",
+        "c0156a9bbe28a80ae39f55a93132c459e3476190",
+        "68faa1be555d90fc23ca773922a7a7b19c26a15b",
+        "a5b141b41e194026841602967f3d4efe81dfb431"
+      ],
+      "decision_files": 6,
+      "history_root": "a6bc9fb40ff11bdfe7190273b97ebb6901f9ad52",
+      "ref": "refs/heads/main",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority"
+    }
+  ],
+  "consumers": [
+    {
+      "allowed_differences": [
+        {
+          "basis": "System font/antialiasing only; exact copy/tokens, centre <=2 UI units, baseline <=4, no clipping.",
+          "id": "SYSTEM-GLYPHS",
+          "review_ref": {
+            "commit": "92fe9aaa3319e2cb156353f1764d22d425c64880",
+            "path": "evidence/engineering-review/user-authorization-20261009.json",
+            "repository": "ui-harness-cocos-menu-20261009",
+            "sha256": "af83455e37cbcda39f323fb970c2372d0f88113b7ff8252ebdf6f2d102f3b5b9"
+          }
+        },
+        {
+          "basis": "At most one physical pixel edge rounding; no size/spacing rule changes.",
+          "id": "PIXEL-ROUNDING",
+          "review_ref": {
+            "commit": "92fe9aaa3319e2cb156353f1764d22d425c64880",
+            "path": "evidence/engineering-review/user-authorization-20261009.json",
+            "repository": "ui-harness-cocos-menu-20261009",
+            "sha256": "af83455e37cbcda39f323fb970c2372d0f88113b7ff8252ebdf6f2d102f3b5b9"
+          }
+        },
+        {
+          "basis": "Normal system chrome only; dismiss onboarding and keep controls within safe area.",
+          "id": "OS-CHROME",
+          "review_ref": {
+            "commit": "92fe9aaa3319e2cb156353f1764d22d425c64880",
+            "path": "evidence/engineering-review/user-authorization-20261009.json",
+            "repository": "ui-harness-cocos-menu-20261009",
+            "sha256": "af83455e37cbcda39f323fb970c2372d0f88113b7ff8252ebdf6f2d102f3b5b9"
+          }
+        }
+      ],
+      "applicability": "required",
+      "consumer": {
+        "kind": "change",
+        "record_ref": {
+          "commit": "92fe9aaa3319e2cb156353f1764d22d425c64880",
+          "path": "openspec/changes/consume-approved-cocos-menu/proposal.md",
+          "repository": "ui-harness-cocos-menu-20261009",
+          "sha256": "6e934714ec932adfe5047120585816d320903504e604eb4d6ce8f19c54981090"
+        },
+        "subject": "consume-approved-cocos-menu"
+      },
+      "coverage": [
+        {
+          "behavior_ref": "Menu and session transitions preserve approved behavior",
+          "release": "U001",
+          "screen_states": [
+            "menu/default",
+            "menu/resumable",
+            "menu/zero-empty",
+            "menu/zero-resumable",
+            "dialog/reset-empty",
+            "dialog/reset-resumable",
+            "session/active"
+          ],
+          "unit": "UI-OD-COCOS-MENU"
+        },
+        {
+          "behavior_ref": "Android lifecycle and configuration match the approved scope",
+          "release": "U001",
+          "screen_states": [
+            "menu/default",
+            "menu/resumable",
+            "menu/zero-empty",
+            "menu/zero-resumable",
+            "dialog/reset-empty",
+            "dialog/reset-resumable",
+            "session/active"
+          ],
+          "unit": "UI-OD-COCOS-MENU"
+        },
+        {
+          "behavior_ref": "Native presentation consumes the exact approved resources",
+          "release": "U001",
+          "screen_states": [
+            "menu/default",
+            "menu/resumable",
+            "menu/zero-empty",
+            "menu/zero-resumable",
+            "dialog/reset-empty",
+            "dialog/reset-resumable",
+            "session/active"
+          ],
+          "unit": "UI-OD-COCOS-MENU"
+        },
+        {
+          "behavior_ref": "Verification rejects missing or unsuccessful obligations",
+          "release": "U001",
+          "screen_states": [
+            "menu/default",
+            "menu/resumable",
+            "menu/zero-empty",
+            "menu/zero-resumable",
+            "dialog/reset-empty",
+            "dialog/reset-resumable",
+            "session/active"
+          ],
+          "unit": "UI-OD-COCOS-MENU"
+        }
+      ]
+    }
+  ],
+  "current_checked": true,
+  "current_permission": false,
+  "diagnostics": [],
+  "engineering_authorized": false,
+  "external_objects": [],
+  "fixed_result": {
+    "authorities": [
+      {
+        "commit": "a5b141b41e194026841602967f3d4efe81dfb431",
+        "commits": [
+          "a6bc9fb40ff11bdfe7190273b97ebb6901f9ad52",
+          "99526d0a38689138bd81fcd8f09e9693502d7d41",
+          "3dd129e52cf4d86d2bd4e6d51c2d8cde75948231",
+          "51ec3351dd1bed964a4dda115e02bae1bfa6335a",
+          "c6f6cda8b823fa5a5fb9c2ec0f89e876c305bd60",
+          "e0541e083c06deb694d091872b08e3499e9d72be",
+          "db1d8d36482883a46f6624c02cde4241547f3d18",
+          "aaf7b57f7fc4accc78384058ca78c88788f98a3c",
+          "77edfd556a27df96afb16197fe3f59bb48ead340",
+          "03eefa28dc36a22e807a5c8147359ddf0be97d9f",
+          "09ebfed2ffb414745206b36af2c80417392b1175",
+          "9f6a404c2c069dae601a8a7ec1e4a875d34665d5",
+          "c0156a9bbe28a80ae39f55a93132c459e3476190",
+          "68faa1be555d90fc23ca773922a7a7b19c26a15b",
+          "a5b141b41e194026841602967f3d4efe81dfb431"
+        ],
+        "decision_files": 6,
+        "history_root": "a6bc9fb40ff11bdfe7190273b97ebb6901f9ad52",
+        "ref": "refs/heads/main",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority"
+      }
+    ],
+    "consumers": [
+      {
+        "allowed_differences": [
+          {
+            "basis": "System font/antialiasing only; exact copy/tokens, centre <=2 UI units, baseline <=4, no clipping.",
+            "id": "SYSTEM-GLYPHS",
+            "review_ref": {
+              "commit": "92fe9aaa3319e2cb156353f1764d22d425c64880",
+              "path": "evidence/engineering-review/user-authorization-20261009.json",
+              "repository": "ui-harness-cocos-menu-20261009",
+              "sha256": "af83455e37cbcda39f323fb970c2372d0f88113b7ff8252ebdf6f2d102f3b5b9"
+            }
+          },
+          {
+            "basis": "At most one physical pixel edge rounding; no size/spacing rule changes.",
+            "id": "PIXEL-ROUNDING",
+            "review_ref": {
+              "commit": "92fe9aaa3319e2cb156353f1764d22d425c64880",
+              "path": "evidence/engineering-review/user-authorization-20261009.json",
+              "repository": "ui-harness-cocos-menu-20261009",
+              "sha256": "af83455e37cbcda39f323fb970c2372d0f88113b7ff8252ebdf6f2d102f3b5b9"
+            }
+          },
+          {
+            "basis": "Normal system chrome only; dismiss onboarding and keep controls within safe area.",
+            "id": "OS-CHROME",
+            "review_ref": {
+              "commit": "92fe9aaa3319e2cb156353f1764d22d425c64880",
+              "path": "evidence/engineering-review/user-authorization-20261009.json",
+              "repository": "ui-harness-cocos-menu-20261009",
+              "sha256": "af83455e37cbcda39f323fb970c2372d0f88113b7ff8252ebdf6f2d102f3b5b9"
+            }
+          }
+        ],
+        "applicability": "required",
+        "consumer": {
+          "kind": "change",
+          "record_ref": {
+            "commit": "92fe9aaa3319e2cb156353f1764d22d425c64880",
+            "path": "openspec/changes/consume-approved-cocos-menu/proposal.md",
+            "repository": "ui-harness-cocos-menu-20261009",
+            "sha256": "6e934714ec932adfe5047120585816d320903504e604eb4d6ce8f19c54981090"
+          },
+          "subject": "consume-approved-cocos-menu"
+        },
+        "coverage": [
+          {
+            "behavior_ref": "Menu and session transitions preserve approved behavior",
+            "release": "U001",
+            "screen_states": [
+              "menu/default",
+              "menu/resumable",
+              "menu/zero-empty",
+              "menu/zero-resumable",
+              "dialog/reset-empty",
+              "dialog/reset-resumable",
+              "session/active"
+            ],
+            "unit": "UI-OD-COCOS-MENU"
+          },
+          {
+            "behavior_ref": "Android lifecycle and configuration match the approved scope",
+            "release": "U001",
+            "screen_states": [
+              "menu/default",
+              "menu/resumable",
+              "menu/zero-empty",
+              "menu/zero-resumable",
+              "dialog/reset-empty",
+              "dialog/reset-resumable",
+              "session/active"
+            ],
+            "unit": "UI-OD-COCOS-MENU"
+          },
+          {
+            "behavior_ref": "Native presentation consumes the exact approved resources",
+            "release": "U001",
+            "screen_states": [
+              "menu/default",
+              "menu/resumable",
+              "menu/zero-empty",
+              "menu/zero-resumable",
+              "dialog/reset-empty",
+              "dialog/reset-resumable",
+              "session/active"
+            ],
+            "unit": "UI-OD-COCOS-MENU"
+          },
+          {
+            "behavior_ref": "Verification rejects missing or unsuccessful obligations",
+            "release": "U001",
+            "screen_states": [
+              "menu/default",
+              "menu/resumable",
+              "menu/zero-empty",
+              "menu/zero-resumable",
+              "dialog/reset-empty",
+              "dialog/reset-resumable",
+              "session/active"
+            ],
+            "unit": "UI-OD-COCOS-MENU"
+          }
+        ]
+      }
+    ],
+    "current_permission": false,
+    "diagnostics": [],
+    "engineering_authorized": false,
+    "external_objects": [],
+    "implementation": {
+      "capabilities": [
+        "fixed-objects",
+        "strict-models",
+        "historical-decisions",
+        "current-observation",
+        "no-requirements-context"
+      ],
+      "dependencies": {
+        "Pillow": "12.0.0",
+        "PyYAML": "6.0.3",
+        "attrs": "26.1.0",
+        "jsonschema": "4.26.0",
+        "jsonschema-specifications": "2025.9.1",
+        "referencing": "0.37.0",
+        "rpds-py": "2026.6.3"
+      },
+      "files": {
+        "check.py": "dc2787340699f96d4bdf17c47e3daed84b5c4cec3b43f10cd984da19eaa2c16a",
+        "config/requirements.lock": "83c0ebd66ba9035a60b625e519782fa68a165d860c466bfba6574eafafaf88b6",
+        "lib/ui_design/__init__.py": "c916cd340b0bceb262cf5999324a500bc92609a06a844956195a908a00ee5690",
+        "lib/ui_design/api.py": "85690a418986f8cee8c749a84e06f4329412da42a0bf1a7a5e6598e342538203",
+        "lib/ui_design/errors.py": "524a1e80362e7b7187773c46a58aabf9c3897489b4b453a32a1ade8ade1032f6",
+        "lib/ui_design/history.py": "4a8f97a2ce6f6cec2ae4142e6a18451bb2c0aed6160bc469385b15f6b92ed1f6",
+        "lib/ui_design/media.py": "51d1c132079a29218a13935768c641468d8a254ebc72c004728ca4d7d09ace63",
+        "lib/ui_design/models.py": "77af375e459ff28d073521fad7cfa87094db736015c283334d609dba9b018428",
+        "lib/ui_design/objects.py": "2ce542c26d30dce3dc67655ca640ac478580d9b7fd042b30dd1ae0a7ee2d5c5f",
+        "lib/ui_design/observation.py": "d035942800e51a5234bf3db3ddfdfbf67c804eaec917c934832666b09d93034d",
+        "lib/ui_design/runtime.py": "e708817c6e90517ebf2d0de5b30b7a3195eefaf2a7fbb5929471ba92cec74992",
+        "lib/ui_design/validation.py": "c14f4905e2f6c5855e869ec1b8c002b038b5f8e8d88841d76a50905464529352",
+        "schemas/ui.schema.json": "6db5acf79dc36a17689fc30e84657e06dc935f60c15208063b508004a6de550e",
+        "ui-design-check": "78b1b3512dc207a7bbdb0699a0148842a6cb21ed1c76428dad3377bb4f9f1f58"
+      },
+      "invoked_entry": "scripts/ui-design-check",
+      "platform": {
+        "machine": "arm64",
+        "system": "Darwin"
+      },
+      "python_minor": "3.13",
+      "rules": {
+        "sha256": "86f8ede38d0ecc841e590bf08db6462a05916cda044284f0ac0b296dec529fe5",
+        "version": "ui-check/1"
+      }
+    },
+    "inputs": [
+      {
+        "commit": "03eefa28dc36a22e807a5c8147359ddf0be97d9f",
+        "path": "reviews/supplementary-20261009/policy.json",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "bba599d11d0e6d6be602e2fdef50f785483b243910ecd193ca13cfbdb4ba9753"
+      },
+      {
+        "commit": "68faa1be555d90fc23ca773922a7a7b19c26a15b",
+        "path": "reviews/supplementary-20261009/candidate-closure-02.json",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "b5a7910351212cf857bc2505ede9987135160add85ddfdaf248926ce561f3959"
+      },
+      {
+        "commit": "77edfd556a27df96afb16197fe3f59bb48ead340",
+        "path": "inputs/supplementary-20261009/authority.md",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "b39875c1b6c6d86795f66b55be755857d8bb6dabb61e68c310ff9233fc25498f"
+      },
+      {
+        "commit": "77edfd556a27df96afb16197fe3f59bb48ead340",
+        "path": "inputs/supplementary-20261009/cocos-expected.json",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "b251aefad98cccbfde58554ea1042e2db17fb6803fb1f9fdcafe91f120658a47"
+      },
+      {
+        "commit": "77edfd556a27df96afb16197fe3f59bb48ead340",
+        "path": "inputs/supplementary-20261009/feasibility.md",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "527cd61a4b080b3b864545aeb2243f38b60bf3784fb4ddc165b2344110f8862b"
+      },
+      {
+        "commit": "77edfd556a27df96afb16197fe3f59bb48ead340",
+        "path": "inputs/supplementary-20261009/scope.md",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "60c6534443bfa215a9aafe7169eba1bc07eb39675d2fb1fc6e7793e351dc6066"
+      },
+      {
+        "commit": "77edfd556a27df96afb16197fe3f59bb48ead340",
+        "path": "inputs/supplementary-20261009/tool-observations.zip",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "ff648b26a016917189a84bc09eb80384584f35eb86493e7386b6d64dde7c8745"
+      },
+      {
+        "commit": "99526d0a38689138bd81fcd8f09e9693502d7d41",
+        "path": "inputs/archives/kenney_ui-pack.zip",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "a8a14a234911eb648c062622915c93e79e94e97cb7f9f375a70f6617f1174318"
+      },
+      {
+        "commit": "99526d0a38689138bd81fcd8f09e9693502d7d41",
+        "path": "inputs/authority.md",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "8c84263dc8ad1db635d66336b2b08d7a76d2f673396e3d670dbb1c21b950b5ef"
+      },
+      {
+        "commit": "a5b141b41e194026841602967f3d4efe81dfb431",
+        "path": "design/units/UI-OD-COCOS-MENU/decisions/approve-U001.yaml",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "8d06ddfe3b680ad61fe6265eb744963c91e466f70b36c6853ce369de74f8b34c"
+      },
+      {
+        "commit": "a5b141b41e194026841602967f3d4efe81dfb431",
+        "path": "design/units/UI-OD-COCOS-MENU/decisions/user-approval-U001.json",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "f134dcb2c421f47c5adabbd22787a65ade94713c1e74b48f042ebf55d646596b"
+      },
+      {
+        "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/LICENSE-kenney.txt",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "69f7eaa5e05913b4d09cf5848f75390b5c3c9a409ef8555777803d9ca0c171fb"
+      },
+      {
+        "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/assets/menu-primary.png",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "0c43a01a95270167be8c05a68c45a2709e60177d9dfa59bedb56fd0802659e52"
+      },
+      {
+        "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/assets/menu-secondary.png",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "f0f3d52f110768bf93a10b44f4ec3c727924c25734ce85e1275464c9b02cfe18"
+      },
+      {
+        "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/brief.md",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "4ea05c927165ec06af5855c44b645143cd20c2bc6e264e0b0dc7e885f03f976e"
+      },
+      {
+        "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/expected-copy.json",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "b251aefad98cccbfde58554ea1042e2db17fb6803fb1f9fdcafe91f120658a47"
+      },
+      {
+        "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/handoff.md",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "712fe7fbd781118413e688e3890a55dda0577e0a94a03ebbb0140fab72180a42"
+      },
+      {
+        "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/index.html",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "6bfd233b9211f0bcb7ad90a8f1ef3c7fb581170018f35449564161e26fbe7335"
+      },
+      {
+        "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/iteration.md",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "dde54a3f13753686b7e6e2edbaf2ad0c511a2b6d5ec84b0f30d88525f5fbfbfc"
+      },
+      {
+        "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/manifest.yaml",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "d2cd2f77e757633539c7b84a66c71abb6b644db574ef00e60f3d1081effe09f3"
+      },
+      {
+        "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/menu.css",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "06e171c94fc1df5192e183bbb489d90d448f2770fcd32cc25cd3450b4c3a2691"
+      },
+      {
+        "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/menu.js",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "3471b60a82b9a61b0670a0609d763ea2525f40649b7f6996198944a935862800"
+      },
+      {
+        "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/references.html",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "3777880f2ef76f49605231292495ca4874b67d2cec34fcaf6081a3de1e25ddc8"
+      },
+      {
+        "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/sources.md",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "1778a6f6ee95c79399cc3f43dbb3cad1a4a0c8cd8703a6a2555218f47792bd37"
+      },
+      {
+        "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/tokens.json",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "f63f301464e53d46653da074884664a0aef033684c0c5dbec41322be7c110c31"
+      },
+      {
+        "commit": "c6f6cda8b823fa5a5fb9c2ec0f89e876c305bd60",
+        "path": "design/units/UI-2048-MENU/releases/U001/manifest.yaml",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "062a4887d998100c3bcda978f3b6630087b35b51206a5777ef1ccabaad9a18b2"
+      },
+      {
+        "commit": "c6f6cda8b823fa5a5fb9c2ec0f89e876c305bd60",
+        "path": "design/units/UI-CALCULATOR/releases/U001/manifest.yaml",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "2f1ec315db7bf890fde151b6c8ad8ca6075759f6ab7daf6ee976d0a121306630"
+      },
+      {
+        "commit": "db1d8d36482883a46f6624c02cde4241547f3d18",
+        "path": "design/units/UI-2048-MENU/decisions/approve-U001.yaml",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "b634b272ddbd1712f605ec436835338a4a32b2c58b1779cc44c4bc54905fb171"
+      },
+      {
+        "commit": "db1d8d36482883a46f6624c02cde4241547f3d18",
+        "path": "design/units/UI-2048-MENU/decisions/user-approval-U001.json",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "6bd21a75e160955cbdd1c8f9c7a2399fbc3a3232cca80785cae279805de34b7f"
+      },
+      {
+        "commit": "db1d8d36482883a46f6624c02cde4241547f3d18",
+        "path": "design/units/UI-CALCULATOR/decisions/approve-U001.yaml",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "78d7f4acab4fbb74a2098bfe26560f67ddb3d6538017fff53e2011c740236682"
+      },
+      {
+        "commit": "db1d8d36482883a46f6624c02cde4241547f3d18",
+        "path": "design/units/UI-CALCULATOR/decisions/user-approval-U001.json",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "6bd21a75e160955cbdd1c8f9c7a2399fbc3a3232cca80785cae279805de34b7f"
+      },
+      {
+        "commit": "5a6a1586687c093d67f359860ca0642728bd4f9e",
+        "path": "harness/ui-design/config/project.json",
+        "repository": "ui-harness-cocos-menu-20261009",
+        "sha256": "9d1331f873126d0b4a3561339994ba5c6af522433b7921d3c97479e42af071ed"
+      },
+      {
+        "commit": "92fe9aaa3319e2cb156353f1764d22d425c64880",
+        "path": "evidence/engineering-review/user-authorization-20261009.json",
+        "repository": "ui-harness-cocos-menu-20261009",
+        "sha256": "af83455e37cbcda39f323fb970c2372d0f88113b7ff8252ebdf6f2d102f3b5b9"
+      },
+      {
+        "commit": "92fe9aaa3319e2cb156353f1764d22d425c64880",
+        "path": "openspec/changes/consume-approved-cocos-menu/proposal.md",
+        "repository": "ui-harness-cocos-menu-20261009",
+        "sha256": "6e934714ec932adfe5047120585816d320903504e604eb4d6ce8f19c54981090"
+      },
+      {
+        "commit": "a248717a118ce0ca490e52e8be42fdec5d07840d",
+        "path": "openspec/changes/consume-approved-cocos-menu/ui-bindings.json",
+        "repository": "ui-harness-cocos-menu-20261009",
+        "sha256": "743443fd1f0bf4b8ba3fd28c8f5e187d50e21af96168f13ddec560ce4c29847d"
+      }
+    ],
+    "mode": "current",
+    "packages": [
+      {
+        "dependencies": [],
+        "external_inputs": [
+          {
+            "commit": "77edfd556a27df96afb16197fe3f59bb48ead340",
+            "path": "inputs/supplementary-20261009/scope.md",
+            "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+            "sha256": "60c6534443bfa215a9aafe7169eba1bc07eb39675d2fb1fc6e7793e351dc6066"
+          },
+          {
+            "commit": "77edfd556a27df96afb16197fe3f59bb48ead340",
+            "path": "inputs/supplementary-20261009/cocos-expected.json",
+            "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+            "sha256": "b251aefad98cccbfde58554ea1042e2db17fb6803fb1f9fdcafe91f120658a47"
+          },
+          {
+            "commit": "99526d0a38689138bd81fcd8f09e9693502d7d41",
+            "path": "inputs/archives/kenney_ui-pack.zip",
+            "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+            "sha256": "a8a14a234911eb648c062622915c93e79e94e97cb7f9f375a70f6617f1174318"
+          },
+          {
+            "commit": "77edfd556a27df96afb16197fe3f59bb48ead340",
+            "path": "inputs/supplementary-20261009/tool-observations.zip",
+            "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+            "sha256": "ff648b26a016917189a84bc09eb80384584f35eb86493e7386b6d64dde7c8745"
+          }
+        ],
+        "files": [
+          {
+            "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+            "path": "design/units/UI-OD-COCOS-MENU/releases/U001/LICENSE-kenney.txt",
+            "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+            "sha256": "69f7eaa5e05913b4d09cf5848f75390b5c3c9a409ef8555777803d9ca0c171fb"
+          },
+          {
+            "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+            "path": "design/units/UI-OD-COCOS-MENU/releases/U001/assets/menu-primary.png",
+            "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+            "sha256": "0c43a01a95270167be8c05a68c45a2709e60177d9dfa59bedb56fd0802659e52"
+          },
+          {
+            "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+            "path": "design/units/UI-OD-COCOS-MENU/releases/U001/assets/menu-secondary.png",
+            "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+            "sha256": "f0f3d52f110768bf93a10b44f4ec3c727924c25734ce85e1275464c9b02cfe18"
+          },
+          {
+            "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+            "path": "design/units/UI-OD-COCOS-MENU/releases/U001/brief.md",
+            "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+            "sha256": "4ea05c927165ec06af5855c44b645143cd20c2bc6e264e0b0dc7e885f03f976e"
+          },
+          {
+            "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+            "path": "design/units/UI-OD-COCOS-MENU/releases/U001/expected-copy.json",
+            "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+            "sha256": "b251aefad98cccbfde58554ea1042e2db17fb6803fb1f9fdcafe91f120658a47"
+          },
+          {
+            "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+            "path": "design/units/UI-OD-COCOS-MENU/releases/U001/handoff.md",
+            "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+            "sha256": "712fe7fbd781118413e688e3890a55dda0577e0a94a03ebbb0140fab72180a42"
+          },
+          {
+            "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+            "path": "design/units/UI-OD-COCOS-MENU/releases/U001/index.html",
+            "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+            "sha256": "6bfd233b9211f0bcb7ad90a8f1ef3c7fb581170018f35449564161e26fbe7335"
+          },
+          {
+            "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+            "path": "design/units/UI-OD-COCOS-MENU/releases/U001/iteration.md",
+            "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+            "sha256": "dde54a3f13753686b7e6e2edbaf2ad0c511a2b6d5ec84b0f30d88525f5fbfbfc"
+          },
+          {
+            "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+            "path": "design/units/UI-OD-COCOS-MENU/releases/U001/menu.css",
+            "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+            "sha256": "06e171c94fc1df5192e183bbb489d90d448f2770fcd32cc25cd3450b4c3a2691"
+          },
+          {
+            "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+            "path": "design/units/UI-OD-COCOS-MENU/releases/U001/menu.js",
+            "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+            "sha256": "3471b60a82b9a61b0670a0609d763ea2525f40649b7f6996198944a935862800"
+          },
+          {
+            "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+            "path": "design/units/UI-OD-COCOS-MENU/releases/U001/references.html",
+            "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+            "sha256": "3777880f2ef76f49605231292495ca4874b67d2cec34fcaf6081a3de1e25ddc8"
+          },
+          {
+            "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+            "path": "design/units/UI-OD-COCOS-MENU/releases/U001/sources.md",
+            "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+            "sha256": "1778a6f6ee95c79399cc3f43dbb3cad1a4a0c8cd8703a6a2555218f47792bd37"
+          },
+          {
+            "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+            "path": "design/units/UI-OD-COCOS-MENU/releases/U001/tokens.json",
+            "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+            "sha256": "f63f301464e53d46653da074884664a0aef033684c0c5dbec41322be7c110c31"
+          }
+        ],
+        "package_ref": {
+          "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+          "path": "design/units/UI-OD-COCOS-MENU/releases/U001/manifest.yaml",
+          "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+          "sha256": "d2cd2f77e757633539c7b84a66c71abb6b644db574ef00e60f3d1081effe09f3"
+        },
+        "release": "U001",
+        "unit": "UI-OD-COCOS-MENU"
+      }
+    ],
+    "proof_scope": "fixed-time bytes, declared identities and decision history; no remote observation or human impersonation",
+    "result": "PASS",
+    "rules": {
+      "sha256": "86f8ede38d0ecc841e590bf08db6462a05916cda044284f0ac0b296dec529fe5",
+      "version": "ui-check/1"
+    },
+    "schema_version": "ui-result/1",
+    "ui_required": true
+  },
+  "implementation": {
+    "capabilities": [
+      "fixed-objects",
+      "strict-models",
+      "historical-decisions",
+      "current-observation",
+      "no-requirements-context"
+    ],
+    "dependencies": {
+      "Pillow": "12.0.0",
+      "PyYAML": "6.0.3",
+      "attrs": "26.1.0",
+      "jsonschema": "4.26.0",
+      "jsonschema-specifications": "2025.9.1",
+      "referencing": "0.37.0",
+      "rpds-py": "2026.6.3"
+    },
+    "files": {
+      "check.py": "dc2787340699f96d4bdf17c47e3daed84b5c4cec3b43f10cd984da19eaa2c16a",
+      "config/requirements.lock": "83c0ebd66ba9035a60b625e519782fa68a165d860c466bfba6574eafafaf88b6",
+      "lib/ui_design/__init__.py": "c916cd340b0bceb262cf5999324a500bc92609a06a844956195a908a00ee5690",
+      "lib/ui_design/api.py": "85690a418986f8cee8c749a84e06f4329412da42a0bf1a7a5e6598e342538203",
+      "lib/ui_design/errors.py": "524a1e80362e7b7187773c46a58aabf9c3897489b4b453a32a1ade8ade1032f6",
+      "lib/ui_design/history.py": "4a8f97a2ce6f6cec2ae4142e6a18451bb2c0aed6160bc469385b15f6b92ed1f6",
+      "lib/ui_design/media.py": "51d1c132079a29218a13935768c641468d8a254ebc72c004728ca4d7d09ace63",
+      "lib/ui_design/models.py": "77af375e459ff28d073521fad7cfa87094db736015c283334d609dba9b018428",
+      "lib/ui_design/objects.py": "2ce542c26d30dce3dc67655ca640ac478580d9b7fd042b30dd1ae0a7ee2d5c5f",
+      "lib/ui_design/observation.py": "d035942800e51a5234bf3db3ddfdfbf67c804eaec917c934832666b09d93034d",
+      "lib/ui_design/runtime.py": "e708817c6e90517ebf2d0de5b30b7a3195eefaf2a7fbb5929471ba92cec74992",
+      "lib/ui_design/validation.py": "c14f4905e2f6c5855e869ec1b8c002b038b5f8e8d88841d76a50905464529352",
+      "schemas/ui.schema.json": "6db5acf79dc36a17689fc30e84657e06dc935f60c15208063b508004a6de550e",
+      "ui-design-check": "78b1b3512dc207a7bbdb0699a0148842a6cb21ed1c76428dad3377bb4f9f1f58"
+    },
+    "invoked_entry": "scripts/ui-design-check",
+    "platform": {
+      "machine": "arm64",
+      "system": "Darwin"
+    },
+    "python_minor": "3.13",
+    "rules": {
+      "sha256": "86f8ede38d0ecc841e590bf08db6462a05916cda044284f0ac0b296dec529fe5",
+      "version": "ui-check/1"
+    }
+  },
+  "inputs": [
+    {
+      "commit": "03eefa28dc36a22e807a5c8147359ddf0be97d9f",
+      "path": "reviews/supplementary-20261009/policy.json",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "bba599d11d0e6d6be602e2fdef50f785483b243910ecd193ca13cfbdb4ba9753"
+    },
+    {
+      "commit": "68faa1be555d90fc23ca773922a7a7b19c26a15b",
+      "path": "reviews/supplementary-20261009/candidate-closure-02.json",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "b5a7910351212cf857bc2505ede9987135160add85ddfdaf248926ce561f3959"
+    },
+    {
+      "commit": "77edfd556a27df96afb16197fe3f59bb48ead340",
+      "path": "inputs/supplementary-20261009/authority.md",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "b39875c1b6c6d86795f66b55be755857d8bb6dabb61e68c310ff9233fc25498f"
+    },
+    {
+      "commit": "77edfd556a27df96afb16197fe3f59bb48ead340",
+      "path": "inputs/supplementary-20261009/cocos-expected.json",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "b251aefad98cccbfde58554ea1042e2db17fb6803fb1f9fdcafe91f120658a47"
+    },
+    {
+      "commit": "77edfd556a27df96afb16197fe3f59bb48ead340",
+      "path": "inputs/supplementary-20261009/feasibility.md",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "527cd61a4b080b3b864545aeb2243f38b60bf3784fb4ddc165b2344110f8862b"
+    },
+    {
+      "commit": "77edfd556a27df96afb16197fe3f59bb48ead340",
+      "path": "inputs/supplementary-20261009/scope.md",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "60c6534443bfa215a9aafe7169eba1bc07eb39675d2fb1fc6e7793e351dc6066"
+    },
+    {
+      "commit": "77edfd556a27df96afb16197fe3f59bb48ead340",
+      "path": "inputs/supplementary-20261009/tool-observations.zip",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "ff648b26a016917189a84bc09eb80384584f35eb86493e7386b6d64dde7c8745"
+    },
+    {
+      "commit": "99526d0a38689138bd81fcd8f09e9693502d7d41",
+      "path": "inputs/archives/kenney_ui-pack.zip",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "a8a14a234911eb648c062622915c93e79e94e97cb7f9f375a70f6617f1174318"
+    },
+    {
+      "commit": "99526d0a38689138bd81fcd8f09e9693502d7d41",
+      "path": "inputs/authority.md",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "8c84263dc8ad1db635d66336b2b08d7a76d2f673396e3d670dbb1c21b950b5ef"
+    },
+    {
+      "commit": "a5b141b41e194026841602967f3d4efe81dfb431",
+      "path": "design/units/UI-OD-COCOS-MENU/decisions/approve-U001.yaml",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "8d06ddfe3b680ad61fe6265eb744963c91e466f70b36c6853ce369de74f8b34c"
+    },
+    {
+      "commit": "a5b141b41e194026841602967f3d4efe81dfb431",
+      "path": "design/units/UI-OD-COCOS-MENU/decisions/user-approval-U001.json",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "f134dcb2c421f47c5adabbd22787a65ade94713c1e74b48f042ebf55d646596b"
+    },
+    {
+      "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+      "path": "design/units/UI-OD-COCOS-MENU/releases/U001/LICENSE-kenney.txt",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "69f7eaa5e05913b4d09cf5848f75390b5c3c9a409ef8555777803d9ca0c171fb"
+    },
+    {
+      "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+      "path": "design/units/UI-OD-COCOS-MENU/releases/U001/assets/menu-primary.png",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "0c43a01a95270167be8c05a68c45a2709e60177d9dfa59bedb56fd0802659e52"
+    },
+    {
+      "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+      "path": "design/units/UI-OD-COCOS-MENU/releases/U001/assets/menu-secondary.png",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "f0f3d52f110768bf93a10b44f4ec3c727924c25734ce85e1275464c9b02cfe18"
+    },
+    {
+      "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+      "path": "design/units/UI-OD-COCOS-MENU/releases/U001/brief.md",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "4ea05c927165ec06af5855c44b645143cd20c2bc6e264e0b0dc7e885f03f976e"
+    },
+    {
+      "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+      "path": "design/units/UI-OD-COCOS-MENU/releases/U001/expected-copy.json",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "b251aefad98cccbfde58554ea1042e2db17fb6803fb1f9fdcafe91f120658a47"
+    },
+    {
+      "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+      "path": "design/units/UI-OD-COCOS-MENU/releases/U001/handoff.md",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "712fe7fbd781118413e688e3890a55dda0577e0a94a03ebbb0140fab72180a42"
+    },
+    {
+      "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+      "path": "design/units/UI-OD-COCOS-MENU/releases/U001/index.html",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "6bfd233b9211f0bcb7ad90a8f1ef3c7fb581170018f35449564161e26fbe7335"
+    },
+    {
+      "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+      "path": "design/units/UI-OD-COCOS-MENU/releases/U001/iteration.md",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "dde54a3f13753686b7e6e2edbaf2ad0c511a2b6d5ec84b0f30d88525f5fbfbfc"
+    },
+    {
+      "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+      "path": "design/units/UI-OD-COCOS-MENU/releases/U001/manifest.yaml",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "d2cd2f77e757633539c7b84a66c71abb6b644db574ef00e60f3d1081effe09f3"
+    },
+    {
+      "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+      "path": "design/units/UI-OD-COCOS-MENU/releases/U001/menu.css",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "06e171c94fc1df5192e183bbb489d90d448f2770fcd32cc25cd3450b4c3a2691"
+    },
+    {
+      "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+      "path": "design/units/UI-OD-COCOS-MENU/releases/U001/menu.js",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "3471b60a82b9a61b0670a0609d763ea2525f40649b7f6996198944a935862800"
+    },
+    {
+      "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+      "path": "design/units/UI-OD-COCOS-MENU/releases/U001/references.html",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "3777880f2ef76f49605231292495ca4874b67d2cec34fcaf6081a3de1e25ddc8"
+    },
+    {
+      "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+      "path": "design/units/UI-OD-COCOS-MENU/releases/U001/sources.md",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "1778a6f6ee95c79399cc3f43dbb3cad1a4a0c8cd8703a6a2555218f47792bd37"
+    },
+    {
+      "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+      "path": "design/units/UI-OD-COCOS-MENU/releases/U001/tokens.json",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "f63f301464e53d46653da074884664a0aef033684c0c5dbec41322be7c110c31"
+    },
+    {
+      "commit": "c6f6cda8b823fa5a5fb9c2ec0f89e876c305bd60",
+      "path": "design/units/UI-2048-MENU/releases/U001/manifest.yaml",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "062a4887d998100c3bcda978f3b6630087b35b51206a5777ef1ccabaad9a18b2"
+    },
+    {
+      "commit": "c6f6cda8b823fa5a5fb9c2ec0f89e876c305bd60",
+      "path": "design/units/UI-CALCULATOR/releases/U001/manifest.yaml",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "2f1ec315db7bf890fde151b6c8ad8ca6075759f6ab7daf6ee976d0a121306630"
+    },
+    {
+      "commit": "db1d8d36482883a46f6624c02cde4241547f3d18",
+      "path": "design/units/UI-2048-MENU/decisions/approve-U001.yaml",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "b634b272ddbd1712f605ec436835338a4a32b2c58b1779cc44c4bc54905fb171"
+    },
+    {
+      "commit": "db1d8d36482883a46f6624c02cde4241547f3d18",
+      "path": "design/units/UI-2048-MENU/decisions/user-approval-U001.json",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "6bd21a75e160955cbdd1c8f9c7a2399fbc3a3232cca80785cae279805de34b7f"
+    },
+    {
+      "commit": "db1d8d36482883a46f6624c02cde4241547f3d18",
+      "path": "design/units/UI-CALCULATOR/decisions/approve-U001.yaml",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "78d7f4acab4fbb74a2098bfe26560f67ddb3d6538017fff53e2011c740236682"
+    },
+    {
+      "commit": "db1d8d36482883a46f6624c02cde4241547f3d18",
+      "path": "design/units/UI-CALCULATOR/decisions/user-approval-U001.json",
+      "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+      "sha256": "6bd21a75e160955cbdd1c8f9c7a2399fbc3a3232cca80785cae279805de34b7f"
+    },
+    {
+      "commit": "5a6a1586687c093d67f359860ca0642728bd4f9e",
+      "path": "harness/ui-design/config/project.json",
+      "repository": "ui-harness-cocos-menu-20261009",
+      "sha256": "9d1331f873126d0b4a3561339994ba5c6af522433b7921d3c97479e42af071ed"
+    },
+    {
+      "commit": "92fe9aaa3319e2cb156353f1764d22d425c64880",
+      "path": "evidence/engineering-review/user-authorization-20261009.json",
+      "repository": "ui-harness-cocos-menu-20261009",
+      "sha256": "af83455e37cbcda39f323fb970c2372d0f88113b7ff8252ebdf6f2d102f3b5b9"
+    },
+    {
+      "commit": "92fe9aaa3319e2cb156353f1764d22d425c64880",
+      "path": "openspec/changes/consume-approved-cocos-menu/proposal.md",
+      "repository": "ui-harness-cocos-menu-20261009",
+      "sha256": "6e934714ec932adfe5047120585816d320903504e604eb4d6ce8f19c54981090"
+    },
+    {
+      "commit": "a248717a118ce0ca490e52e8be42fdec5d07840d",
+      "path": "openspec/changes/consume-approved-cocos-menu/ui-bindings.json",
+      "repository": "ui-harness-cocos-menu-20261009",
+      "sha256": "743443fd1f0bf4b8ba3fd28c8f5e187d50e21af96168f13ddec560ce4c29847d"
+    }
+  ],
+  "mode": "current",
+  "observations": [
+    {
+      "actual_commit": "a5b141b41e194026841602967f3d4efe81dfb431",
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "-c",
+        "core.fsmonitor=false",
+        "-c",
+        "credential.helper=",
+        "-c",
+        "core.askPass=",
+        "-c",
+        "protocol.allow=never",
+        "-c",
+        "protocol.file.allow=always",
+        "-c",
+        "protocol.https.allow=always",
+        "-c",
+        "protocol.ssh.allow=always",
+        "ls-remote",
+        "--exit-code",
+        "--refs",
+        "https://github.com/liam-i/ui-harness-pilot-design-20261008.git",
+        "refs/heads/main"
+      ],
+      "cwd": "/",
+      "exit_code": 0,
+      "finished_at": "2026-10-09T06:04:50.966858+00:00",
+      "ref": "refs/heads/main",
+      "remote": "https://github.com/liam-i/ui-harness-pilot-design-20261008.git",
+      "selections": [
+        {
+          "commit": "a5b141b41e194026841602967f3d4efe81dfb431",
+          "history_root": "a6bc9fb40ff11bdfe7190273b97ebb6901f9ad52",
+          "ref": "refs/heads/main",
+          "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority"
+        }
+      ],
+      "started_at": "2026-10-09T06:04:50.160481+00:00",
+      "stderr": "",
+      "stdout": "a5b141b41e194026841602967f3d4efe81dfb431\trefs/heads/main\n"
+    }
+  ],
+  "packages": [
+    {
+      "dependencies": [],
+      "external_inputs": [
+        {
+          "commit": "77edfd556a27df96afb16197fe3f59bb48ead340",
+          "path": "inputs/supplementary-20261009/scope.md",
+          "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+          "sha256": "60c6534443bfa215a9aafe7169eba1bc07eb39675d2fb1fc6e7793e351dc6066"
+        },
+        {
+          "commit": "77edfd556a27df96afb16197fe3f59bb48ead340",
+          "path": "inputs/supplementary-20261009/cocos-expected.json",
+          "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+          "sha256": "b251aefad98cccbfde58554ea1042e2db17fb6803fb1f9fdcafe91f120658a47"
+        },
+        {
+          "commit": "99526d0a38689138bd81fcd8f09e9693502d7d41",
+          "path": "inputs/archives/kenney_ui-pack.zip",
+          "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+          "sha256": "a8a14a234911eb648c062622915c93e79e94e97cb7f9f375a70f6617f1174318"
+        },
+        {
+          "commit": "77edfd556a27df96afb16197fe3f59bb48ead340",
+          "path": "inputs/supplementary-20261009/tool-observations.zip",
+          "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+          "sha256": "ff648b26a016917189a84bc09eb80384584f35eb86493e7386b6d64dde7c8745"
+        }
+      ],
+      "files": [
+        {
+          "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+          "path": "design/units/UI-OD-COCOS-MENU/releases/U001/LICENSE-kenney.txt",
+          "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+          "sha256": "69f7eaa5e05913b4d09cf5848f75390b5c3c9a409ef8555777803d9ca0c171fb"
+        },
+        {
+          "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+          "path": "design/units/UI-OD-COCOS-MENU/releases/U001/assets/menu-primary.png",
+          "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+          "sha256": "0c43a01a95270167be8c05a68c45a2709e60177d9dfa59bedb56fd0802659e52"
+        },
+        {
+          "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+          "path": "design/units/UI-OD-COCOS-MENU/releases/U001/assets/menu-secondary.png",
+          "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+          "sha256": "f0f3d52f110768bf93a10b44f4ec3c727924c25734ce85e1275464c9b02cfe18"
+        },
+        {
+          "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+          "path": "design/units/UI-OD-COCOS-MENU/releases/U001/brief.md",
+          "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+          "sha256": "4ea05c927165ec06af5855c44b645143cd20c2bc6e264e0b0dc7e885f03f976e"
+        },
+        {
+          "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+          "path": "design/units/UI-OD-COCOS-MENU/releases/U001/expected-copy.json",
+          "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+          "sha256": "b251aefad98cccbfde58554ea1042e2db17fb6803fb1f9fdcafe91f120658a47"
+        },
+        {
+          "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+          "path": "design/units/UI-OD-COCOS-MENU/releases/U001/handoff.md",
+          "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+          "sha256": "712fe7fbd781118413e688e3890a55dda0577e0a94a03ebbb0140fab72180a42"
+        },
+        {
+          "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+          "path": "design/units/UI-OD-COCOS-MENU/releases/U001/index.html",
+          "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+          "sha256": "6bfd233b9211f0bcb7ad90a8f1ef3c7fb581170018f35449564161e26fbe7335"
+        },
+        {
+          "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+          "path": "design/units/UI-OD-COCOS-MENU/releases/U001/iteration.md",
+          "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+          "sha256": "dde54a3f13753686b7e6e2edbaf2ad0c511a2b6d5ec84b0f30d88525f5fbfbfc"
+        },
+        {
+          "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+          "path": "design/units/UI-OD-COCOS-MENU/releases/U001/menu.css",
+          "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+          "sha256": "06e171c94fc1df5192e183bbb489d90d448f2770fcd32cc25cd3450b4c3a2691"
+        },
+        {
+          "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+          "path": "design/units/UI-OD-COCOS-MENU/releases/U001/menu.js",
+          "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+          "sha256": "3471b60a82b9a61b0670a0609d763ea2525f40649b7f6996198944a935862800"
+        },
+        {
+          "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+          "path": "design/units/UI-OD-COCOS-MENU/releases/U001/references.html",
+          "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+          "sha256": "3777880f2ef76f49605231292495ca4874b67d2cec34fcaf6081a3de1e25ddc8"
+        },
+        {
+          "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+          "path": "design/units/UI-OD-COCOS-MENU/releases/U001/sources.md",
+          "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+          "sha256": "1778a6f6ee95c79399cc3f43dbb3cad1a4a0c8cd8703a6a2555218f47792bd37"
+        },
+        {
+          "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+          "path": "design/units/UI-OD-COCOS-MENU/releases/U001/tokens.json",
+          "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+          "sha256": "f63f301464e53d46653da074884664a0aef033684c0c5dbec41322be7c110c31"
+        }
+      ],
+      "package_ref": {
+        "commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+        "path": "design/units/UI-OD-COCOS-MENU/releases/U001/manifest.yaml",
+        "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+        "sha256": "d2cd2f77e757633539c7b84a66c71abb6b644db574ef00e60f3d1081effe09f3"
+      },
+      "release": "U001",
+      "unit": "UI-OD-COCOS-MENU"
+    }
+  ],
+  "policy_ref": {
+    "commit": "5a6a1586687c093d67f359860ca0642728bd4f9e",
+    "path": "harness/ui-design/config/project.json",
+    "repository": "ui-harness-cocos-menu-20261009",
+    "sha256": "9d1331f873126d0b4a3561339994ba5c6af522433b7921d3c97479e42af071ed"
+  },
+  "proof_scope": "one live UI ref observation and fixed-content verification; no continuing lock or engineering permission",
+  "result": "PASS",
+  "rules": {
+    "sha256": "86f8ede38d0ecc841e590bf08db6462a05916cda044284f0ac0b296dec529fe5",
+    "version": "ui-check/1"
+  },
+  "schema_version": "ui-result/1",
+  "ui_required": true
+}
