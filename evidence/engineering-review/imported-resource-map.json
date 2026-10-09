@@ -1,0 +1,46 @@
+{
+  "design_commit": "c0156a9bbe28a80ae39f55a93132c459e3476190",
+  "approval_commit": "a5b141b41e194026841602967f3d4efe81dfb431",
+  "scene": "dd4c8005-33c3-4b7a-86ce-4d36bd7cad82",
+  "resources": [
+    {
+      "path": "assets/resources/ui/menu/menu-primary.png",
+      "bytes": 784,
+      "sha256": "0c43a01a95270167be8c05a68c45a2709e60177d9dfa59bedb56fd0802659e52",
+      "uuid": "1151ef3a-62e7-4b30-b3fe-929478d9fd8c",
+      "subassets": {
+        "6c48a": {
+          "uuid": "1151ef3a-62e7-4b30-b3fe-929478d9fd8c@6c48a",
+          "importer": "texture"
+        },
+        "f9941": {
+          "uuid": "1151ef3a-62e7-4b30-b3fe-929478d9fd8c@f9941",
+          "importer": "sprite-frame"
+        }
+      }
+    },
+    {
+      "path": "assets/resources/ui/menu/menu-secondary.png",
+      "bytes": 786,
+      "sha256": "f0f3d52f110768bf93a10b44f4ec3c727924c25734ce85e1275464c9b02cfe18",
+      "uuid": "56e95557-52c4-4965-94a7-1e919ba5f409",
+      "subassets": {
+        "6c48a": {
+          "uuid": "56e95557-52c4-4965-94a7-1e919ba5f409@6c48a",
+          "importer": "texture"
+        },
+        "f9941": {
+          "uuid": "56e95557-52c4-4965-94a7-1e919ba5f409@f9941",
+          "importer": "sprite-frame"
+        }
+      }
+    },
+    {
+      "path": "assets/resources/ui/menu/tokens.json",
+      "bytes": 1653,
+      "sha256": "f63f301464e53d46653da074884664a0aef033684c0c5dbec41322be7c110c31",
+      "uuid": "4f02433a-3053-4308-b6ab-342c8f1e8f42",
+      "subassets": {}
+    }
+  ]
+}

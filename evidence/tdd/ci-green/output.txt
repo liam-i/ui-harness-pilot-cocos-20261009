@@ -1,0 +1,18 @@
+test_actual_missing_apk_rejects (test_cocos_ci.CocosResultsTests.test_actual_missing_apk_rejects) ... ok
+test_actual_nonzero_process_rejects_and_retains_exit (test_cocos_ci.CocosResultsTests.test_actual_nonzero_process_rejects_and_retains_exit) ... ok
+test_actual_timeout_rejects_and_retains_interruption (test_cocos_ci.CocosResultsTests.test_actual_timeout_rejects_and_retains_interruption) ... ok
+test_complete_exact_matrix_passes (test_cocos_ci.CocosResultsTests.test_complete_exact_matrix_passes) ... ok
+test_empty_independent_denominator_rejects (test_cocos_ci.CocosResultsTests.test_empty_independent_denominator_rejects) ... ok
+test_failed_cleanup_or_unfinished_result_rejects (test_cocos_ci.CocosResultsTests.test_failed_cleanup_or_unfinished_result_rejects) ... ok
+test_missing_empty_duplicate_or_extra_cases_reject (test_cocos_ci.CocosResultsTests.test_missing_empty_duplicate_or_extra_cases_reject) ... ok
+test_missing_or_failed_build_step_rejects (test_cocos_ci.CocosResultsTests.test_missing_or_failed_build_step_rejects) ... ok
+test_missing_result_cannot_satisfy_success (test_cocos_ci.CocosResultsTests.test_missing_result_cannot_satisfy_success) ... ok
+test_skipped_cancelled_failed_or_timed_out_case_rejects (test_cocos_ci.CocosResultsTests.test_skipped_cancelled_failed_or_timed_out_case_rejects) ... ok
+test_timeout_cannot_be_reported_as_pass (test_cocos_ci.CocosResultsTests.test_timeout_cannot_be_reported_as_pass) ... ok
+test_wrong_missing_or_duplicate_device_rejects (test_cocos_ci.CocosResultsTests.test_wrong_missing_or_duplicate_device_rejects) ... ok
+test_wrong_source_or_apk_rejects (test_cocos_ci.CocosResultsTests.test_wrong_source_or_apk_rejects) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.137s
+
+OK

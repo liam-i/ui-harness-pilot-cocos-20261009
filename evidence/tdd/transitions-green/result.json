@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-10-09T06:10:39.352014+00:00",
+  "command": [
+    "npm",
+    "run",
+    "test:state"
+  ],
+  "exit": 0,
+  "expected_exit": 0,
+  "inputs": {
+    "tests/menu-state.test.ts": "6b19c2c6ea9065a09debcc3e4ac8b36395441f8ff62c93f48e085f3e070a44c0",
+    "assets/scripts/MenuState.ts": "1142fb433226bd786e1ab57a0dca1dadee846b2591c1b253aac2611bf51c746c"
+  },
+  "stdout": "\n> test:state\n> node --test tests/menu-state.test.ts\n\n✔ cold start has best 128 and no resumable session (0.728958ms)\n✔ disabled Continue does not create a session (0.097125ms)\n✔ New game creates a session; Menu and Continue preserve its identity (0.058834ms)\n✔ reset dialog blocks outside and underlying actions; Cancel preserves state (0.067667ms)\n✔ confirmed reset clears best without creating a session (0.077ms)\n✔ confirmed reset preserves an existing session through Continue and Menu (0.068334ms)\n✔ Back closes dialog, returns from session, then requests native leave at root (0.072125ms)\n✔ zero best survives dialog cancellation and Back with and without a session (0.068625ms)\nℹ tests 8\nℹ suites 0\nℹ pass 8\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 162.171125\n",
+  "stderr": "",
+  "scope": "Menu state behavior tests only; not native C01-C16 execution."
+}

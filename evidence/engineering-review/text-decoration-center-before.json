@@ -1,0 +1,32 @@
+{
+  "basis": "Actual reference DOM read in the fixed-design measurement copy; no outer layout changes. SYSTEM-GLYPHS limit 2 UI units.",
+  "observation": "cocos-local-runtime-03/emulator-5580/observation-001.json",
+  "checks": [
+    {
+      "name": "spark",
+      "reference_center": [
+        286.0986328125,
+        74.1162109375
+      ],
+      "actual_center": [
+        289.0,
+        76.12497965494799
+      ],
+      "delta": 2.9013671875,
+      "limit": 2
+    },
+    {
+      "name": "arrow",
+      "reference_center": [
+        305.37109375,
+        433.5546875
+      ],
+      "actual_center": [
+        302.5,
+        433.624979654948
+      ],
+      "delta": 2.87109375,
+      "limit": 2
+    }
+  ]
+}
