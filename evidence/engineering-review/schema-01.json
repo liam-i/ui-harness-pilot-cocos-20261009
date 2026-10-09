@@ -1,0 +1,16 @@
+{
+  "command": [
+    "npm",
+    "run",
+    "--silent",
+    "spec",
+    "--",
+    "schema",
+    "which",
+    "spec-driven",
+    "--json"
+  ],
+  "exit": 0,
+  "stdout": "{\n  \"name\": \"spec-driven\",\n  \"source\": \"package\",\n  \"path\": \"/private/tmp/ui-reconciliation-20261009-kd2a3glf/cocos-menu/node_modules/@fission-ai/openspec/schemas/spec-driven\",\n  \"shadows\": []\n}\n",
+  "stderr": "Note: Schema commands are experimental and may change.\n"
+}

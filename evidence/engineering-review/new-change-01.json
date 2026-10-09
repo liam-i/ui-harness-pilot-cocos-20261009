@@ -1,0 +1,15 @@
+{
+  "command": [
+    "npm",
+    "run",
+    "--silent",
+    "spec",
+    "--",
+    "new",
+    "change",
+    "consume-approved-cocos-menu"
+  ],
+  "exit": 0,
+  "stdout": "Created change 'consume-approved-cocos-menu' at openspec/changes/consume-approved-cocos-menu/\nSchema: spec-driven\nNext: openspec status --change consume-approved-cocos-menu\n",
+  "stderr": "- Creating change 'consume-approved-cocos-menu' with schema 'spec-driven'...\n"
+}

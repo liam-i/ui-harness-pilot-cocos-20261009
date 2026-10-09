@@ -1,0 +1,8 @@
+{
+  "reason": "Actual OpenSpec 1.12.0 specs instructions require Purpose for new capabilities. The reviewed draft omitted this non-normative summary.",
+  "adjustment": "Prefix the same approved purpose; no Requirement, Scenario, implementation design, task or acceptance change.",
+  "original_spec_sha256": "cb15e9e51e855e8914b0e3169f499e7484b4cbb4a6722e0d1e952f84cf8a4860",
+  "prefix": "## Purpose\n\nThis capability verifies that an approved menu design is consumed by a native Cocos Android application, preserving its menu, dialog, session, lifecycle, resources and delivery behavior on the two selected simulators.\n\n",
+  "original_spec_bytes_preserved_as_suffix": true,
+  "review_scope_unchanged": true
+}

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "npm",
+    "run",
+    "--silent",
+    "spec",
+    "--",
+    "validate",
+    "consume-approved-cocos-menu",
+    "--strict",
+    "--no-interactive"
+  ],
+  "exit": 0,
+  "stdout": "Change 'consume-approved-cocos-menu' is valid\n",
+  "stderr": ""
+}
