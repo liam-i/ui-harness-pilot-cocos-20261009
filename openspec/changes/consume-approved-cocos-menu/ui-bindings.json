@@ -1,0 +1,124 @@
+{
+  "schema_version": "ui-bindings/1",
+  "bindings": [
+    {
+      "consumer": {
+        "kind": "change",
+        "subject": "consume-approved-cocos-menu",
+        "record_ref": {
+          "repository": "ui-harness-cocos-menu-20261009",
+          "commit": "92fe9aaa3319e2cb156353f1764d22d425c64880",
+          "path": "openspec/changes/consume-approved-cocos-menu/proposal.md",
+          "sha256": "6e934714ec932adfe5047120585816d320903504e604eb4d6ce8f19c54981090"
+        }
+      },
+      "applicability": "required",
+      "rationale_ref": {
+        "repository": "ui-harness-cocos-menu-20261009",
+        "commit": "92fe9aaa3319e2cb156353f1764d22d425c64880",
+        "path": "evidence/engineering-review/user-authorization-20261009.json",
+        "sha256": "af83455e37cbcda39f323fb970c2372d0f88113b7ff8252ebdf6f2d102f3b5b9"
+      },
+      "approved_releases": [
+        {
+          "approved_release_ref": {
+            "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
+            "commit": "a5b141b41e194026841602967f3d4efe81dfb431",
+            "path": "design/units/UI-OD-COCOS-MENU/decisions/approve-U001.yaml",
+            "sha256": "8d06ddfe3b680ad61fe6265eb744963c91e466f70b36c6853ce369de74f8b34c"
+          }
+        }
+      ],
+      "coverage": [
+        {
+          "behavior_ref": "Menu and session transitions preserve approved behavior",
+          "unit": "UI-OD-COCOS-MENU",
+          "release": "U001",
+          "screen_states": [
+            "menu/default",
+            "menu/resumable",
+            "menu/zero-empty",
+            "menu/zero-resumable",
+            "dialog/reset-empty",
+            "dialog/reset-resumable",
+            "session/active"
+          ]
+        },
+        {
+          "behavior_ref": "Android lifecycle and configuration match the approved scope",
+          "unit": "UI-OD-COCOS-MENU",
+          "release": "U001",
+          "screen_states": [
+            "menu/default",
+            "menu/resumable",
+            "menu/zero-empty",
+            "menu/zero-resumable",
+            "dialog/reset-empty",
+            "dialog/reset-resumable",
+            "session/active"
+          ]
+        },
+        {
+          "behavior_ref": "Native presentation consumes the exact approved resources",
+          "unit": "UI-OD-COCOS-MENU",
+          "release": "U001",
+          "screen_states": [
+            "menu/default",
+            "menu/resumable",
+            "menu/zero-empty",
+            "menu/zero-resumable",
+            "dialog/reset-empty",
+            "dialog/reset-resumable",
+            "session/active"
+          ]
+        },
+        {
+          "behavior_ref": "Verification rejects missing or unsuccessful obligations",
+          "unit": "UI-OD-COCOS-MENU",
+          "release": "U001",
+          "screen_states": [
+            "menu/default",
+            "menu/resumable",
+            "menu/zero-empty",
+            "menu/zero-resumable",
+            "dialog/reset-empty",
+            "dialog/reset-resumable",
+            "session/active"
+          ]
+        }
+      ],
+      "allowed_differences": [
+        {
+          "id": "SYSTEM-GLYPHS",
+          "basis": "System font/antialiasing only; exact copy/tokens, centre <=2 UI units, baseline <=4, no clipping.",
+          "review_ref": {
+            "repository": "ui-harness-cocos-menu-20261009",
+            "commit": "92fe9aaa3319e2cb156353f1764d22d425c64880",
+            "path": "evidence/engineering-review/user-authorization-20261009.json",
+            "sha256": "af83455e37cbcda39f323fb970c2372d0f88113b7ff8252ebdf6f2d102f3b5b9"
+          }
+        },
+        {
+          "id": "PIXEL-ROUNDING",
+          "basis": "At most one physical pixel edge rounding; no size/spacing rule changes.",
+          "review_ref": {
+            "repository": "ui-harness-cocos-menu-20261009",
+            "commit": "92fe9aaa3319e2cb156353f1764d22d425c64880",
+            "path": "evidence/engineering-review/user-authorization-20261009.json",
+            "sha256": "af83455e37cbcda39f323fb970c2372d0f88113b7ff8252ebdf6f2d102f3b5b9"
+          }
+        },
+        {
+          "id": "OS-CHROME",
+          "basis": "Normal system chrome only; dismiss onboarding and keep controls within safe area.",
+          "review_ref": {
+            "repository": "ui-harness-cocos-menu-20261009",
+            "commit": "92fe9aaa3319e2cb156353f1764d22d425c64880",
+            "path": "evidence/engineering-review/user-authorization-20261009.json",
+            "sha256": "af83455e37cbcda39f323fb970c2372d0f88113b7ff8252ebdf6f2d102f3b5b9"
+          }
+        }
+      ]
+    }
+  ]
+}
