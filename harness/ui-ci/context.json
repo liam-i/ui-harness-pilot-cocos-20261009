@@ -9,14 +9,14 @@
     "action": "pre-merge",
     "rules": {
       "version": "ui-check/1",
-      "sha256": "86f8ede38d0ecc841e590bf08db6462a05916cda044284f0ac0b296dec529fe5"
+      "sha256": "7654e89e41e9cbde1439d4ee353d8f0cbccb17112e1cbf10ed7752aac2e32154"
     },
     "authorities": [
       {
         "repository": "/private/tmp/ui-workflow-p0-20260930-u8jw1kyx/work/ui-authority",
         "ref": "refs/heads/main",
         "history_root": "a6bc9fb40ff11bdfe7190273b97ebb6901f9ad52",
-        "commit": "a5b141b41e194026841602967f3d4efe81dfb431"
+        "commit": "c6f8cb0b1bb9db34cf894a383092dee4d5bdbc8d"
       }
     ],
     "subject": {
