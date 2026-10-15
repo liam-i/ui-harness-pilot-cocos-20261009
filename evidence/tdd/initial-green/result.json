@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-10-09T06:09:55.985781+00:00",
+  "command": [
+    "npm",
+    "run",
+    "test:state"
+  ],
+  "exit": 0,
+  "expected_exit": 0,
+  "inputs": {
+    "tests/menu-state.test.ts": "3ed26499d2df7867baac8972e19cfe56b408c8cb3a0b651ee32cc19fdb4143ce",
+    "assets/scripts/MenuState.ts": "da7180189d13ada8bbecf4fc3b84a995646ac0f918fd2125b0c5f8bfb03b0149"
+  },
+  "stdout": "\n> test:state\n> node --test tests/menu-state.test.ts\n\n✔ cold start has best 128 and no resumable session (0.756542ms)\nℹ tests 1\nℹ suites 0\nℹ pass 1\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 160.671083\n",
+  "stderr": "",
+  "scope": "Menu state behavior tests only; not native C01-C16 execution."
+}

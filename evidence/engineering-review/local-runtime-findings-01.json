@@ -1,0 +1,20 @@
+{
+  "issues": [
+    {
+      "id": "visual-profiler",
+      "evidence": "cocos-local-runtime-01/emulator-5580/C01-cold.png",
+      "finding": "Actual debug profiler overlays quiet button/footer. Static UI verification failed; removed by profiler.hideStats and regression observation.",
+      "requirement_changed": false
+    },
+    {
+      "id": "C11-window-parser",
+      "evidence": "cocos-local-runtime-01/emulator-5580/commands.json",
+      "finding": "API 37 dumpsys window windows exposes per-window isOnScreen/isVisible; not mCurrentFocus. Actual app was hidden and launcher visible. Original C11 remains failed.",
+      "repair_rounds_used": 1,
+      "repair": "Parse observed window blocks and require both app hidden and launcher visible. No weakening of native leave behavior."
+    }
+  ],
+  "first_run_passed_cases": 10,
+  "first_run_complete": false,
+  "second_run": "in progress; no result claimed"
+}

@@ -1,0 +1,148 @@
+test_complete_exact_matrix_passes (test_cocos_ci.CocosResultsTests.test_complete_exact_matrix_passes) ... ok
+test_empty_independent_denominator_rejects (test_cocos_ci.CocosResultsTests.test_empty_independent_denominator_rejects) ... FAIL
+test_failed_cleanup_or_unfinished_result_rejects (test_cocos_ci.CocosResultsTests.test_failed_cleanup_or_unfinished_result_rejects) ... FAIL
+test_missing_empty_duplicate_or_extra_cases_reject (test_cocos_ci.CocosResultsTests.test_missing_empty_duplicate_or_extra_cases_reject) ... FAIL
+test_missing_or_failed_build_step_rejects (test_cocos_ci.CocosResultsTests.test_missing_or_failed_build_step_rejects) ... 
+  test_missing_or_failed_build_step_rejects (test_cocos_ci.CocosResultsTests.test_missing_or_failed_build_step_rejects) (change=<function CocosResultsTests.test_missing_or_failed_build_step_rejects.<locals>.<lambda> at 0x10632a560>) ... FAIL
+  test_missing_or_failed_build_step_rejects (test_cocos_ci.CocosResultsTests.test_missing_or_failed_build_step_rejects) (change=<function CocosResultsTests.test_missing_or_failed_build_step_rejects.<locals>.<lambda> at 0x10632a4b0>) ... FAIL
+  test_missing_or_failed_build_step_rejects (test_cocos_ci.CocosResultsTests.test_missing_or_failed_build_step_rejects) (change=<function CocosResultsTests.test_missing_or_failed_build_step_rejects.<locals>.<lambda> at 0x10632a400>) ... FAIL
+  test_missing_or_failed_build_step_rejects (test_cocos_ci.CocosResultsTests.test_missing_or_failed_build_step_rejects) (change=<function CocosResultsTests.test_missing_or_failed_build_step_rejects.<locals>.<lambda> at 0x10632a350>) ... FAIL
+test_skipped_cancelled_failed_or_timed_out_case_rejects (test_cocos_ci.CocosResultsTests.test_skipped_cancelled_failed_or_timed_out_case_rejects) ... 
+  test_skipped_cancelled_failed_or_timed_out_case_rejects (test_cocos_ci.CocosResultsTests.test_skipped_cancelled_failed_or_timed_out_case_rejects) (status='skipped') ... FAIL
+  test_skipped_cancelled_failed_or_timed_out_case_rejects (test_cocos_ci.CocosResultsTests.test_skipped_cancelled_failed_or_timed_out_case_rejects) (status='cancelled') ... FAIL
+  test_skipped_cancelled_failed_or_timed_out_case_rejects (test_cocos_ci.CocosResultsTests.test_skipped_cancelled_failed_or_timed_out_case_rejects) (status='failed') ... FAIL
+  test_skipped_cancelled_failed_or_timed_out_case_rejects (test_cocos_ci.CocosResultsTests.test_skipped_cancelled_failed_or_timed_out_case_rejects) (status='timed_out') ... FAIL
+test_timeout_cannot_be_reported_as_pass (test_cocos_ci.CocosResultsTests.test_timeout_cannot_be_reported_as_pass) ... FAIL
+test_wrong_missing_or_duplicate_device_rejects (test_cocos_ci.CocosResultsTests.test_wrong_missing_or_duplicate_device_rejects) ... FAIL
+test_wrong_source_or_apk_rejects (test_cocos_ci.CocosResultsTests.test_wrong_source_or_apk_rejects) ... FAIL
+
+======================================================================
+FAIL: test_empty_independent_denominator_rejects (test_cocos_ci.CocosResultsTests.test_empty_independent_denominator_rejects)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/liam/Developer/workflow.md/ai-native-sdlc/engineering-harness/tests/ui-design/test_cocos_ci.py", line 91, in test_empty_independent_denominator_rejects
+    with self.assertRaises(ValueError): self.verify()
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_failed_cleanup_or_unfinished_result_rejects (test_cocos_ci.CocosResultsTests.test_failed_cleanup_or_unfinished_result_rejects)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/liam/Developer/workflow.md/ai-native-sdlc/engineering-harness/tests/ui-design/test_cocos_ci.py", line 85, in test_failed_cleanup_or_unfinished_result_rejects
+    with self.assertRaises(ValueError): self.verify()
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_missing_empty_duplicate_or_extra_cases_reject (test_cocos_ci.CocosResultsTests.test_missing_empty_duplicate_or_extra_cases_reject)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/liam/Developer/workflow.md/ai-native-sdlc/engineering-harness/tests/ui-design/test_cocos_ci.py", line 57, in test_missing_empty_duplicate_or_extra_cases_reject
+    with self.assertRaises(ValueError): self.verify()
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_missing_or_failed_build_step_rejects (test_cocos_ci.CocosResultsTests.test_missing_or_failed_build_step_rejects) (change=<function CocosResultsTests.test_missing_or_failed_build_step_rejects.<locals>.<lambda> at 0x10632a560>)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/liam/Developer/workflow.md/ai-native-sdlc/engineering-harness/tests/ui-design/test_cocos_ci.py", line 50, in test_missing_or_failed_build_step_rejects
+    with self.assertRaises(ValueError): self.verify()
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_missing_or_failed_build_step_rejects (test_cocos_ci.CocosResultsTests.test_missing_or_failed_build_step_rejects) (change=<function CocosResultsTests.test_missing_or_failed_build_step_rejects.<locals>.<lambda> at 0x10632a4b0>)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/liam/Developer/workflow.md/ai-native-sdlc/engineering-harness/tests/ui-design/test_cocos_ci.py", line 50, in test_missing_or_failed_build_step_rejects
+    with self.assertRaises(ValueError): self.verify()
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_missing_or_failed_build_step_rejects (test_cocos_ci.CocosResultsTests.test_missing_or_failed_build_step_rejects) (change=<function CocosResultsTests.test_missing_or_failed_build_step_rejects.<locals>.<lambda> at 0x10632a400>)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/liam/Developer/workflow.md/ai-native-sdlc/engineering-harness/tests/ui-design/test_cocos_ci.py", line 50, in test_missing_or_failed_build_step_rejects
+    with self.assertRaises(ValueError): self.verify()
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_missing_or_failed_build_step_rejects (test_cocos_ci.CocosResultsTests.test_missing_or_failed_build_step_rejects) (change=<function CocosResultsTests.test_missing_or_failed_build_step_rejects.<locals>.<lambda> at 0x10632a350>)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/liam/Developer/workflow.md/ai-native-sdlc/engineering-harness/tests/ui-design/test_cocos_ci.py", line 50, in test_missing_or_failed_build_step_rejects
+    with self.assertRaises(ValueError): self.verify()
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_skipped_cancelled_failed_or_timed_out_case_rejects (test_cocos_ci.CocosResultsTests.test_skipped_cancelled_failed_or_timed_out_case_rejects) (status='skipped')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/liam/Developer/workflow.md/ai-native-sdlc/engineering-harness/tests/ui-design/test_cocos_ci.py", line 63, in test_skipped_cancelled_failed_or_timed_out_case_rejects
+    with self.assertRaises(ValueError): self.verify()
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_skipped_cancelled_failed_or_timed_out_case_rejects (test_cocos_ci.CocosResultsTests.test_skipped_cancelled_failed_or_timed_out_case_rejects) (status='cancelled')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/liam/Developer/workflow.md/ai-native-sdlc/engineering-harness/tests/ui-design/test_cocos_ci.py", line 63, in test_skipped_cancelled_failed_or_timed_out_case_rejects
+    with self.assertRaises(ValueError): self.verify()
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_skipped_cancelled_failed_or_timed_out_case_rejects (test_cocos_ci.CocosResultsTests.test_skipped_cancelled_failed_or_timed_out_case_rejects) (status='failed')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/liam/Developer/workflow.md/ai-native-sdlc/engineering-harness/tests/ui-design/test_cocos_ci.py", line 63, in test_skipped_cancelled_failed_or_timed_out_case_rejects
+    with self.assertRaises(ValueError): self.verify()
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_skipped_cancelled_failed_or_timed_out_case_rejects (test_cocos_ci.CocosResultsTests.test_skipped_cancelled_failed_or_timed_out_case_rejects) (status='timed_out')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/liam/Developer/workflow.md/ai-native-sdlc/engineering-harness/tests/ui-design/test_cocos_ci.py", line 63, in test_skipped_cancelled_failed_or_timed_out_case_rejects
+    with self.assertRaises(ValueError): self.verify()
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_timeout_cannot_be_reported_as_pass (test_cocos_ci.CocosResultsTests.test_timeout_cannot_be_reported_as_pass)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/liam/Developer/workflow.md/ai-native-sdlc/engineering-harness/tests/ui-design/test_cocos_ci.py", line 67, in test_timeout_cannot_be_reported_as_pass
+    with self.assertRaises(ValueError): self.verify()
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_wrong_missing_or_duplicate_device_rejects (test_cocos_ci.CocosResultsTests.test_wrong_missing_or_duplicate_device_rejects)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/liam/Developer/workflow.md/ai-native-sdlc/engineering-harness/tests/ui-design/test_cocos_ci.py", line 73, in test_wrong_missing_or_duplicate_device_rejects
+    with self.assertRaises(ValueError): self.verify()
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_wrong_source_or_apk_rejects (test_cocos_ci.CocosResultsTests.test_wrong_source_or_apk_rejects)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/liam/Developer/workflow.md/ai-native-sdlc/engineering-harness/tests/ui-design/test_cocos_ci.py", line 79, in test_wrong_source_or_apk_rejects
+    with self.assertRaises(ValueError): self.verify()
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.003s
+
+FAILED (failures=14)

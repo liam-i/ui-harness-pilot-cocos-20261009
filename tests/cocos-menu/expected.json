@@ -1,0 +1,165 @@
+{
+  "kind": "independent-design-expectations",
+  "scope": "Cocos Android menu handoff pilot only",
+  "recorded_before_engineering_implementation": true,
+  "required_states": [
+    "menu/default",
+    "menu/resumable",
+    "menu/zero-empty",
+    "menu/zero-resumable",
+    "dialog/reset-empty",
+    "dialog/reset-resumable",
+    "session/active"
+  ],
+  "device_test_count": 16,
+  "device_count": 2,
+  "total_required_device_tests": 32,
+  "prototype_checks_count_toward_device_tests": false,
+  "devices": [
+    {
+      "name": "Harness_UI_Small_20261009",
+      "px": [
+        720,
+        1280
+      ],
+      "density": 320
+    },
+    {
+      "name": "Harness_UI_Regular_20261009",
+      "px": [
+        1080,
+        2400
+      ],
+      "density": 420
+    }
+  ],
+  "runtime": {
+    "api": 37,
+    "abi": "arm64-v8a",
+    "page_size": 16384,
+    "fingerprint": "google/sdk_gphone16k_arm64/emu64a16k:17/CP31.260618.005/15731206:user/dev-keys"
+  },
+  "cases": [
+    {
+      "id": "C01",
+      "action": "冷启动",
+      "expected": "best=128；Continue 禁用；菜单与两个 PNG 正常呈现",
+      "state": "menu/default"
+    },
+    {
+      "id": "C02",
+      "action": "点击禁用 Continue",
+      "expected": "留在菜单，未创建会话",
+      "state": "menu/default"
+    },
+    {
+      "id": "C03",
+      "action": "New game 后 Menu",
+      "expected": "先进入会话，再返回可继续菜单",
+      "state": "menu/resumable"
+    },
+    {
+      "id": "C04",
+      "action": "返回后 Continue",
+      "expected": "返回同一会话，没有新建会话",
+      "state": "session/active"
+    },
+    {
+      "id": "C05",
+      "action": "打开重置，点击遮罩，再 Cancel",
+      "expected": "遮罩不触发底层操作；Cancel 保留原 best 和会话状态",
+      "state": "dialog/reset-empty"
+    },
+    {
+      "id": "C06",
+      "action": "无会话时确认重置",
+      "expected": "best=0，Continue 仍禁用",
+      "state": "menu/zero-empty"
+    },
+    {
+      "id": "C07",
+      "action": "有会话时确认重置",
+      "expected": "best=0，Continue 可用，恢复同一会话",
+      "state": "menu/zero-resumable"
+    },
+    {
+      "id": "C08",
+      "action": "归零后 New game",
+      "expected": "能够进入新会话，没有残留弹窗或点击遮挡",
+      "state": "session/active"
+    },
+    {
+      "id": "C09",
+      "action": "弹窗内 Android Back",
+      "expected": "取消重置，保留 best 与会话",
+      "state": "dialog/reset-resumable"
+    },
+    {
+      "id": "C10",
+      "action": "会话内 Android Back",
+      "expected": "返回可继续菜单",
+      "state": "menu/resumable"
+    },
+    {
+      "id": "C11",
+      "action": "根菜单 Android Back",
+      "expected": "应用离开前台；重新冷启动为初态",
+      "state": "menu/default"
+    },
+    {
+      "id": "C12",
+      "action": "归零且有会话时 Home，再回到仍存活进程",
+      "expected": "保留当前画面、best=0 及会话；无重置或丢失",
+      "state": "menu/zero-resumable"
+    },
+    {
+      "id": "C13",
+      "action": "核对构建与运行资源",
+      "expected": "两张 PNG、tokens 输入身份与获批包一致；两个 Sprite 实际加载正确资源，UUID 与导入记录可追溯",
+      "state": "menu/default"
+    },
+    {
+      "id": "C14",
+      "action": "遍历七种必需状态并截图",
+      "expected": "全部活动控件在安全区内、不重叠，文字不裁切；主控件≥64 UI 单位，次要点击区≥50；按 handoff 允许差异检查",
+      "state": "all"
+    },
+    {
+      "id": "C15",
+      "action": "系统 font_scale=1.3 后启动并检查关键状态",
+      "expected": "Cocos 画布规则与字号不额外放大；控件和文字完整；测试后恢复 1.0",
+      "state": "all"
+    },
+    {
+      "id": "C16",
+      "action": "设备请求横屏后核对应用，再恢复设备方向",
+      "expected": "应用保持竖屏，实际渲染画面与安全区仍满足设计约束",
+      "state": "menu/default"
+    }
+  ],
+  "timeouts_seconds": {
+    "creator_export": 600,
+    "native_build": 900,
+    "emulator_boot_per_device": 240,
+    "suite_per_device": 300,
+    "case": 30
+  },
+  "ci_job_timeout_minutes": 60,
+  "ci_required_behavior": [
+    "all selected device suites must execute and report nonzero exact expected case identities",
+    "missing result, failed, skipped, cancelled or timed-out required step rejects aggregate",
+    "one actual platform failure or required-step skip and recovery",
+    "one missing or stale common input on an actual new Job"
+  ],
+  "verification_rules": [
+    "Use real touches/back/home and actual app behavior; do not replace user actions with direct state writes",
+    "Synthetic reset data may only prepare deterministic cold-start state before the test",
+    "UI report must map every case to assertions and actual results, never infer passing from log text alone"
+  ],
+  "limitations": [
+    "No physical-device performance acceptance",
+    "No complete 2048 gameplay",
+    "No cross-process save",
+    "TalkBack semantics not validated"
+  ]
+}

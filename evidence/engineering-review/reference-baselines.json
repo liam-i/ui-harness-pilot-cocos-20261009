@@ -1,0 +1,63 @@
+{
+  "method": "Independent browser DOM measurements with zero-size baseline marker in a temporary exact-source copy. Outer layout unchanged. Grid symbol measured in a single inline wrapper to avoid adding a second grid item.",
+  "limits": {
+    "text_center_ui": 2,
+    "baseline_ui": 4
+  },
+  "small": {
+    "default": {
+      "eyebrow": 45.99609375,
+      "title": 143.61328125,
+      "tagline": 189.609375,
+      "score-caption": 241.46484375,
+      "best": 275.087890625,
+      "continue": 360.126953125,
+      "new-game": 440.1171875,
+      "reset-best": 511.552734375,
+      "footer": 637.958984375
+    },
+    "session": {
+      "eyebrow": 45.99609375,
+      "session-copy": 384.453125,
+      "menu-back": 453.49609375,
+      "footer": 637.958984375,
+      "session-title": 90.7421875
+    },
+    "dialog": {
+      "cancel": 434.98046875,
+      "confirm-reset": 434.98046875,
+      "reset-title": 303.134765625,
+      "reset-explanation": 342.25,
+      "reset-detail": 366.25,
+      "dialog-mark-label": 247.197265625
+    }
+  },
+  "regular": {
+    "default": {
+      "eyebrow": 80,
+      "title": 177.6171875,
+      "tagline": 223.61328125,
+      "score-caption": 275.46875,
+      "best": 309.091796875,
+      "continue": 406.1328125,
+      "new-game": 486.123046875,
+      "reset-best": 557.55859375,
+      "footer": 804.208984375
+    },
+    "session": {
+      "eyebrow": 80,
+      "session-copy": 418.45703125,
+      "menu-back": 487.5,
+      "footer": 804.208984375,
+      "session-title": 124.74609375
+    },
+    "dialog": {
+      "cancel": 518.10546875,
+      "confirm-reset": 518.10546875,
+      "reset-title": 386.259765625,
+      "reset-explanation": 425.375,
+      "reset-detail": 449.375,
+      "dialog-mark-label": 330.322265625
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "expected_path": "tests/cocos-menu/expected.json",
+  "expected_sha256": "b251aefad98cccbfde58554ea1042e2db17fb6803fb1f9fdcafe91f120658a47",
+  "build_script": "scripts/build-cocos-android.py",
+  "test_script": "scripts/test-cocos-android.py",
+  "toolchain_files": [
+    {
+      "base": "creator",
+      "relative": "",
+      "sha256": "3a8452496c03e85f2784e64679a1fd203701b0b245125efee02c7923f2bd3464"
+    },
+    {
+      "base": "creator_app",
+      "relative": "Contents/Info.plist",
+      "sha256": "ce05c91cbc65f0407685762c28bd4eaa87bd60dff0f147e191787df04c41b6d6"
+    },
+    {
+      "base": "creator_app",
+      "relative": "Contents/Resources/resources/3d/engine/package.json",
+      "sha256": "fe73dec32b94d31ff07e40de643cf27d774abbb86d77f1ea98a4eb0a8cc99a32"
+    },
+    {
+      "base": "jdk",
+      "relative": "release",
+      "sha256": "cb6064fe4d7b87d9fbb8b8c7702047044d1bbeac38e0c5217f595579b6cc764b"
+    },
+    {
+      "base": "jdk",
+      "relative": "bin/java",
+      "sha256": "af8b122943345320b179c75c3404d56a981017739746b75f9caf583632f0bea0"
+    },
+    {
+      "base": "gradle_home",
+      "relative": "lib/gradle-launcher-8.13.jar",
+      "sha256": "56a30262647231bf3ab30b2bf090f5ecacff9329d3f1af1a1de73fd1ab4c64b4"
+    },
+    {
+      "base": "sdk",
+      "relative": "ndk/28.2.13676358/source.properties",
+      "sha256": "c00aa236fdb205e9be9edd9e2169763e48aca52735efff4e16f34205d49783b5"
+    },
+    {
+      "base": "sdk",
+      "relative": "cmake/3.22.1/bin/cmake",
+      "sha256": "e46c7ffb232c25a43e130509368dd6b88f492f110ab6b44c69c639ac1ed8c8f6"
+    },
+    {
+      "base": "sdk",
+      "relative": "build-tools/36.0.0/source.properties",
+      "sha256": "7dee6632e9ad6cb111da2bb99d747211e27927061b1276d040bb1d71fded5ebb"
+    },
+    {
+      "base": "sdk",
+      "relative": "platforms/android-36/android.jar",
+      "sha256": "d9eb9da824d9e247a352f570f01e1169e725b2954bca9e283a71786c59b59f9a"
+    },
+    {
+      "base": "sdk",
+      "relative": "emulator/emulator",
+      "sha256": "c12c8d72da94cb5abd7f9d2578923d05ff94ea827f0ee593c6e563c96edc0d42"
+    },
+    {
+      "base": "sdk",
+      "relative": "platform-tools/adb",
+      "sha256": "5759ea07285e5a5b66d84f489c118a3fa3998e69cd37725e5a3dc7cbe0597278"
+    }
+  ]
+}

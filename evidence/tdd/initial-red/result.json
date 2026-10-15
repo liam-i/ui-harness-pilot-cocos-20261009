@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-10-09T06:06:31.983418+00:00",
+  "command": [
+    "npm",
+    "run",
+    "test:state"
+  ],
+  "exit": 1,
+  "expected_exit": 1,
+  "inputs": {
+    "tests/menu-state.test.ts": "3ed26499d2df7867baac8972e19cfe56b408c8cb3a0b651ee32cc19fdb4143ce",
+    "assets/scripts/MenuState.ts": "f2b1fc45b067cb8ae55d8c014252161e38394687f91ab89ff0c63e8287b8efaf"
+  },
+  "stdout": "\n> test:state\n> node --test tests/menu-state.test.ts\n\n✖ cold start has best 128 and no resumable session (1.532167ms)\nℹ tests 1\nℹ suites 0\nℹ pass 0\nℹ fail 1\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 177.375375\n\n✖ failing tests:\n\ntest at tests/menu-state.test.ts:6:1\n✖ cold start has best 128 and no resumable session (1.532167ms)\n  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n  + actual - expected\n  \n    [\n  +   0,\n  -   128,\n      null,\n      'menu',\n      false\n    ]\n  \n      at TestContext.<anonymous> (file:///private/tmp/ui-reconciliation-20261009-kd2a3glf/cocos-menu/tests/menu-state.test.ts:8:12)\n      at Test.runInAsyncScope (node:async_hooks:226:14)\n      at Test.run (node:internal/test_runner/test:1402:25)\n      at Test.start (node:internal/test_runner/test:1262:17)\n      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {\n    generatedMessage: true,\n    code: 'ERR_ASSERTION',\n    actual: [ 0, null, 'menu', false ],\n    expected: [ 128, null, 'menu', false ],\n    operator: 'deepStrictEqual',\n    diff: 'simple'\n  }\n",
+  "stderr": "",
+  "scope": "Menu state behavior tests only; not native C01-C16 execution."
+}
